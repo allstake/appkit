@@ -1,5 +1,5 @@
 {
-  "name": "@web3modal/cdn",
+  "name": "@web3modal-x/cdn",
   "version": "5.1.11",
   "main": "dist/wagmi.js",
   "type": "module",
@@ -25,9 +25,9 @@
     }
   },
   "dependencies": {
-    "@web3modal/wagmi": "workspace:*",
-    "@web3modal/ethers": "workspace:*",
-    "@web3modal/ethers5": "workspace:*",
+    "@web3modal-x/wagmi": "workspace:*",
+    "@web3modal-x/ethers": "workspace:*",
+    "@web3modal-x/ethers5": "workspace:*",
     "@wagmi/connectors": "5.1.9",
     "@wagmi/core": "2.13.4",
     "viem": "2.21.4",

@@ -1,4 +1,4 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 
 @customElement('w3m-wallet-login-list')

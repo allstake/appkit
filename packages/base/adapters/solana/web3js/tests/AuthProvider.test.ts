@@ -3,7 +3,7 @@ import { mockW3mFrameProvider } from './mocks/W3mFrameProvider'
 import { AuthProvider } from '../providers/AuthProvider'
 import { TestConstants } from './util/TestConstants'
 import { mockLegacyTransaction, mockVersionedTransaction } from './mocks/Transaction'
-import type { SocialProvider } from '@web3modal/scaffold-utils'
+import type { SocialProvider } from '@web3modal-x/scaffold-utils'
 
 describe('AuthProvider specific tests', () => {
   let provider = mockW3mFrameProvider()

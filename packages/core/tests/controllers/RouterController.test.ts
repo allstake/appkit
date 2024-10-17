@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { RouterController } from '../../index.js'
-import { ConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil } from '@web3modal-x/common'
 
 // -- Tests --------------------------------------------------------------------
 describe('RouterController', () => {

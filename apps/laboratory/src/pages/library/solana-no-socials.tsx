@@ -1,4 +1,4 @@
-import { createWeb3Modal, defaultSolanaConfig } from '@web3modal/solana/react'
+import { createWeb3Modal, defaultSolanaConfig } from '@web3modal-x/solana/react'
 
 import { ThemeStore } from '../../utils/StoreUtil'
 import { solana, solanaDevnet, solanaTestnet } from '../../utils/ChainsUtil'

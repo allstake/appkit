@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-input-amount'
-import type { WuiInputAmount } from '@web3modal/ui/src/composites/wui-input-amount'
+import '@web3modal-x/ui/src/composites/wui-input-amount'
+import type { WuiInputAmount } from '@web3modal-x/ui/src/composites/wui-input-amount'
 import { html } from 'lit'
 import '../../components/gallery-container'
 

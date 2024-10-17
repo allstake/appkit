@@ -1,4 +1,4 @@
-import '@web3modal/polyfills'
+import '@web3modal-x/polyfills'
 
 export { EVMWagmiClient } from './client.js'
 

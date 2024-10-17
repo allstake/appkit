@@ -1,4 +1,4 @@
-import type { CaipNetwork } from '@web3modal/core'
+import type { CaipNetwork } from '@web3modal-x/core'
 import {
   AccountController,
   AssetUtil,
@@ -7,8 +7,8 @@ import {
   EventsController,
   NetworkController,
   RouterController
-} from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

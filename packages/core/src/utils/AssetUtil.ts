@@ -1,4 +1,4 @@
-import type { Chain } from '@web3modal/common'
+import type { Chain } from '@web3modal-x/common'
 import { ApiController } from '../controllers/ApiController.js'
 import { AssetController } from '../controllers/AssetController.js'
 import type { CaipNetwork, Connector, WcWallet } from './TypeUtil.js'

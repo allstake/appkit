@@ -1,6 +1,6 @@
 import type { CreateConfigParameters } from '@wagmi/core'
 import { authConnector as authConnectorWagmi } from './AuthConnector.js'
-import type { SocialProvider } from '@web3modal/scaffold-utils'
+import type { SocialProvider } from '@web3modal-x/scaffold-utils'
 
 interface W3mFrameProviderOptions {
   projectId: string

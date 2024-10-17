@@ -1,8 +1,8 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-list-button'
+import '@web3modal-x/ui/src/composites/wui-list-button'
 import { html } from 'lit'
 import '../../components/gallery-container'
-import type { WuiListButton } from '@web3modal/ui'
+import type { WuiListButton } from '@web3modal-x/ui'
 
 type Component = Meta<WuiListButton>
 

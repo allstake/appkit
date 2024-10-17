@@ -1,5 +1,5 @@
 import { Button, Stack, Link, Text, Spacer } from '@chakra-ui/react'
-import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal/ethers/react'
+import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal-x/ethers/react'
 import { BrowserProvider, JsonRpcSigner, ethers } from 'ethers'
 import { useState } from 'react'
 import { mainnet } from '../../utils/ChainsUtil'

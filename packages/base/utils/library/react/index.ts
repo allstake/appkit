@@ -5,7 +5,7 @@ import type {
   W3mConnectButton,
   W3mNetworkButton,
   W3mOnrampWidget
-} from '@web3modal/scaffold-ui'
+} from '@web3modal-x/scaffold-ui'
 import type { AppKit } from '../../../src/client.js'
 import type { AppKitOptions } from '../../TypesUtil.js'
 

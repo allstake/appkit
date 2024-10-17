@@ -16,9 +16,9 @@ import {
   RouterController,
   RouterUtil,
   StorageUtil
-} from '@web3modal/core'
+} from '@web3modal-x/core'
 
-import { NetworkUtil } from '@web3modal/common'
+import { NetworkUtil } from '@web3modal-x/common'
 import { ConstantsUtil } from '../core/utils/ConstantsUtil.js'
 
 // -- Client -------------------------------------------------------------------- //

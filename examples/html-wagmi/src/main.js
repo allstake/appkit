@@ -1,5 +1,5 @@
 import { arbitrum, mainnet } from '@wagmi/core/chains'
-import { createWeb3Modal, defaultWagmiConfig } from '@web3modal/wagmi'
+import { createWeb3Modal, defaultWagmiConfig } from '@web3modal-x/wagmi'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

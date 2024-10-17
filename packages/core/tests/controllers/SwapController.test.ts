@@ -20,7 +20,7 @@ import {
   tokensResponse
 } from '../mocks/SwapController.js'
 import { SwapApiUtil } from '../../src/utils/SwapApiUtil.js'
-import { ConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil } from '@web3modal-x/common'
 
 // - Mocks ---------------------------------------------------------------------
 const caipNetwork = { id: 'eip155:137', name: 'Polygon', chain: ConstantsUtil.CHAIN.EVM } as const

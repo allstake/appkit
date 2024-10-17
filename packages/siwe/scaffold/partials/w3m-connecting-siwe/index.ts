@@ -1,7 +1,7 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
-import { AccountController, OptionsController } from '@web3modal/core'
+import { AccountController, OptionsController } from '@web3modal-x/core'
 
 @customElement('w3m-connecting-siwe')
 export class W3mConnectingSiwe extends LitElement {

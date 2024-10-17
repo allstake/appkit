@@ -1,9 +1,9 @@
-import { AccountController, AssetUtil, CoreHelperUtil, NetworkController } from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+import { AccountController, AssetUtil, CoreHelperUtil, NetworkController } from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { ifDefined } from 'lit/directives/if-defined.js'
 import styles from './styles.js'
-import { W3mFrameRpcConstants } from '@web3modal/wallet'
+import { W3mFrameRpcConstants } from '@web3modal-x/wallet'
 import { state } from 'lit/decorators.js'
 
 @customElement('w3m-wallet-compatible-networks-view')

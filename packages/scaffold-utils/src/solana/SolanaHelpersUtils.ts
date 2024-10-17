@@ -1,5 +1,5 @@
-import type { CaipNetwork } from '@web3modal/core'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+import type { CaipNetwork } from '@web3modal-x/core'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 
 import { PresetsUtil } from '../PresetsUtil.js'
 import { SolConstantsUtil } from './SolanaConstantsUtil.js'

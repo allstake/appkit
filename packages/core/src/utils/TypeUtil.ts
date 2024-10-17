@@ -1,5 +1,5 @@
-import type { W3mFrameProvider, W3mFrameTypes } from '@web3modal/wallet'
-import type { Balance, Transaction, Chain } from '@web3modal/common'
+import type { W3mFrameProvider, W3mFrameTypes } from '@web3modal-x/wallet'
+import type { Balance, Transaction, Chain } from '@web3modal-x/common'
 import type {
   NetworkControllerClient,
   NetworkControllerState

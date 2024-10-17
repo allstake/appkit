@@ -1,11 +1,11 @@
-import { AppKit } from '@web3modal/base'
-import { SolanaWeb3JsClient } from '@web3modal/base/adapters/solana/web3js'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
+import { AppKit } from '@web3modal-x/base'
+import { SolanaWeb3JsClient } from '@web3modal-x/base/adapters/solana/web3js'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
 import type { SolanaAppKitOptions } from './options'
-import type { Provider } from '@web3modal/base/adapters/solana/web3js'
+import type { Provider } from '@web3modal-x/base/adapters/solana/web3js'
 
 // -- Configs -----------------------------------------------------------
-export { defaultSolanaConfig } from '@web3modal/base/adapters/solana/web3js'
+export { defaultSolanaConfig } from '@web3modal-x/base/adapters/solana/web3js'
 
 // -- Types -------------------------------------------------------------
 export type { SolanaAppKitOptions, Provider }

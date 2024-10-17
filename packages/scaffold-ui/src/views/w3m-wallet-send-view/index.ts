@@ -1,4 +1,4 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
 import {
@@ -7,7 +7,7 @@ import {
   RouterController,
   SendController,
   ChainController
-} from '@web3modal/core'
+} from '@web3modal-x/core'
 import { state } from 'lit/decorators.js'
 
 @customElement('w3m-wallet-send-view')

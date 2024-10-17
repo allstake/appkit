@@ -3,11 +3,11 @@ import {
   EventsController,
   OptionsController,
   RouterController
-} from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
-import { W3mFrameRpcConstants } from '@web3modal/wallet'
+import { W3mFrameRpcConstants } from '@web3modal-x/wallet'
 
 @customElement('w3m-onramp-providers-footer')
 export class W3mOnRampProvidersFooter extends LitElement {

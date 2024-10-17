@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-compatible-network'
-import type { WuiCompatibleNetwork } from '@web3modal/ui/src/composites/wui-compatible-network'
+import '@web3modal-x/ui/src/composites/wui-compatible-network'
+import type { WuiCompatibleNetwork } from '@web3modal-x/ui/src/composites/wui-compatible-network'
 import { html } from 'lit'
 import { networkImages } from '../../utils/PresetUtils'
 

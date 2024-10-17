@@ -1,5 +1,5 @@
-import { DateUtil } from '@web3modal/common'
-import type { TransactionTransfer, Transaction, TransactionImage } from '@web3modal/common'
+import { DateUtil } from '@web3modal-x/common'
+import type { TransactionTransfer, Transaction, TransactionImage } from '@web3modal-x/common'
 import type { TransactionType } from './TypeUtil.js'
 import { UiHelperUtil } from './UiHelperUtil.js'
 

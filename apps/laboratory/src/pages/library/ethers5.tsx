@@ -1,4 +1,4 @@
-import { createWeb3Modal, defaultConfig } from '@web3modal/ethers5/react'
+import { createWeb3Modal, defaultConfig } from '@web3modal-x/ethers5/react'
 import { AppKitButtons } from '../../components/AppKitButtons'
 import { ThemeStore } from '../../utils/StoreUtil'
 import { EthersConstants } from '../../utils/EthersConstants'

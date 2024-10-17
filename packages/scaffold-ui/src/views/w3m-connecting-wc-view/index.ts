@@ -1,4 +1,4 @@
-import type { BaseError, Platform } from '@web3modal/core'
+import type { BaseError, Platform } from '@web3modal-x/core'
 import {
   ConnectionController,
   ConstantsUtil,
@@ -9,8 +9,8 @@ import {
   RouterController,
   SnackController,
   StorageUtil
-} from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 
@@ -72,7 +72,7 @@ export class W3mConnectingWcView extends LitElement {
         ) {
           RouterController.push('SelectAddresses')
         } else if (OptionsController.state.isSiweEnabled) {
-          const { SIWEController } = await import('@web3modal/siwe')
+          const { SIWEController } = await import('@web3modal-x/siwe')
           if (SIWEController.state.status === 'success') {
             ModalController.close()
           } else {

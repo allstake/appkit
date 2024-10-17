@@ -1,4 +1,4 @@
-import type { Chain } from '@web3modal/common'
+import type { Chain } from '@web3modal-x/common'
 
 const SECURE_SITE = 'https://secure.walletconnect.org'
 

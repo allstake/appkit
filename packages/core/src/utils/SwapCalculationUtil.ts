@@ -1,6 +1,6 @@
 // -- Types --------------------------------------------- //
 
-import { NumberUtil } from '@web3modal/common'
+import { NumberUtil } from '@web3modal-x/common'
 import type { SwapTokenWithBalance } from './TypeUtil.js'
 
 // -- Util ---------------------------------------- //

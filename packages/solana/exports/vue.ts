@@ -1,11 +1,11 @@
 import { onUnmounted, ref } from 'vue'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
-import { getWeb3Modal } from '@web3modal/base/utils/library/vue'
-import { AppKit } from '@web3modal/base'
-import { SolanaWeb3JsClient } from '@web3modal/base/adapters/solana/web3js'
-import { SolStoreUtil, type SolStoreUtilState } from '@web3modal/scaffold-utils/solana'
-import type { Provider, Connection } from '@web3modal/base/adapters/solana/web3js'
-import type { CaipNetwork } from '@web3modal/core'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
+import { getWeb3Modal } from '@web3modal-x/base/utils/library/vue'
+import { AppKit } from '@web3modal-x/base'
+import { SolanaWeb3JsClient } from '@web3modal-x/base/adapters/solana/web3js'
+import { SolStoreUtil, type SolStoreUtilState } from '@web3modal-x/scaffold-utils/solana'
+import type { Provider, Connection } from '@web3modal-x/base/adapters/solana/web3js'
+import type { CaipNetwork } from '@web3modal-x/core'
 import type { SolanaAppKitOptions } from './options'
 
 // -- Types -------------------------------------------------------------------
@@ -132,7 +132,7 @@ export {
   useWeb3Modal,
   useWeb3ModalState,
   useWeb3ModalEvents
-} from '@web3modal/base/utils/library/vue'
+} from '@web3modal-x/base/utils/library/vue'
 
 // -- Universal Exports -------------------------------------------------------
-export { defaultSolanaConfig } from '@web3modal/base/adapters/solana/web3js'
+export { defaultSolanaConfig } from '@web3modal-x/base/adapters/solana/web3js'

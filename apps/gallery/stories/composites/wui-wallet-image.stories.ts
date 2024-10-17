@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-wallet-image'
-import type { WuiWalletImage } from '@web3modal/ui/src/composites/wui-wallet-image'
+import '@web3modal-x/ui/src/composites/wui-wallet-image'
+import type { WuiWalletImage } from '@web3modal-x/ui/src/composites/wui-wallet-image'
 import { html } from 'lit'
 import { walletImageSrc } from '../../utils/PresetUtils'
 

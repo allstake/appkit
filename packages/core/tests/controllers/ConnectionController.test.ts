@@ -1,7 +1,7 @@
 import { beforeAll, describe, expect, it, vi } from 'vitest'
 import type { ConnectionControllerClient, ConnectorType } from '../../index.js'
 import { ChainController, ConnectionController, ConstantsUtil, StorageUtil } from '../../index.js'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 
 // -- Setup --------------------------------------------------------------------
 const chain = CommonConstantsUtil.CHAIN.EVM

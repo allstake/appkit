@@ -1,11 +1,11 @@
-import { defaultWagmiConfig } from '@web3modal/wagmi/react/config'
+import { defaultWagmiConfig } from '@web3modal-x/wagmi/react/config'
 import {
   createWeb3Modal,
   useWeb3Modal,
   useWeb3ModalEvents,
   useWeb3ModalState,
   useWeb3ModalTheme
-} from '@web3modal/wagmi/react'
+} from '@web3modal-x/wagmi/react'
 import { WagmiProvider } from 'wagmi'
 import { arbitrum, mainnet, polygon } from 'wagmi/chains'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'

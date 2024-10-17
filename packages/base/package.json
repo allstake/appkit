@@ -1,5 +1,5 @@
 {
-  "name": "@web3modal/base",
+  "name": "@web3modal-x/base",
   "version": "5.1.11",
   "type": "module",
   "main": "./dist/esm/exports/index.js",
@@ -85,14 +85,14 @@
   },
   "dependencies": {
     "@walletconnect/utils": "2.16.1",
-    "@web3modal/common": "workspace:*",
-    "@web3modal/core": "workspace:*",
-    "@web3modal/polyfills": "workspace:*",
-    "@web3modal/scaffold-ui": "workspace:*",
-    "@web3modal/scaffold-utils": "workspace:*",
-    "@web3modal/siwe": "workspace:*",
-    "@web3modal/ui": "workspace:*",
-    "@web3modal/wallet": "workspace:*"
+    "@web3modal-x/common": "workspace:*",
+    "@web3modal-x/core": "workspace:*",
+    "@web3modal-x/polyfills": "workspace:*",
+    "@web3modal-x/scaffold-ui": "workspace:*",
+    "@web3modal-x/scaffold-utils": "workspace:*",
+    "@web3modal-x/siwe": "workspace:*",
+    "@web3modal-x/ui": "workspace:*",
+    "@web3modal-x/wallet": "workspace:*"
   },
   "optionalDependencies": {
     "borsh": "0.7.0",

@@ -1,14 +1,14 @@
-import { AppKit } from '@web3modal/base'
-import type { AppKitOptions } from '@web3modal/base'
-import { EVMEthers5Client, type AdapterOptions } from '@web3modal/base/adapters/evm/ethers5'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
-import { type Chain, type EthersStoreUtilState } from '@web3modal/scaffold-utils/ethers'
+import { AppKit } from '@web3modal-x/base'
+import type { AppKitOptions } from '@web3modal-x/base'
+import { EVMEthers5Client, type AdapterOptions } from '@web3modal-x/base/adapters/evm/ethers5'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
+import { type Chain, type EthersStoreUtilState } from '@web3modal-x/scaffold-utils/ethers'
 
 // -- Types -------------------------------------------------------------
-export type { AdapterOptions } from '@web3modal/base/adapters/evm/ethers5'
+export type { AdapterOptions } from '@web3modal-x/base/adapters/evm/ethers5'
 
 // -- Configs -----------------------------------------------------------
-export { defaultConfig } from '@web3modal/base/adapters/evm/ethers5'
+export { defaultConfig } from '@web3modal-x/base/adapters/evm/ethers5'
 
 // -- Setup -------------------------------------------------------------
 type EthersAppKitOptions = Omit<AppKitOptions<Chain>, 'adapters' | 'sdkType' | 'sdkVersion'> &

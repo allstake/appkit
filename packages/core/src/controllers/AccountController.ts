@@ -5,14 +5,14 @@ import type {
   ConnectedWalletInfo,
   SocialProvider
 } from '../utils/TypeUtil.js'
-import type { Balance } from '@web3modal/common'
+import type { Balance } from '@web3modal-x/common'
 import { BlockchainApiController } from './BlockchainApiController.js'
 import { SnackController } from './SnackController.js'
 import { SwapController } from './SwapController.js'
 import { SwapApiUtil } from '../utils/SwapApiUtil.js'
-import type { W3mFrameTypes } from '@web3modal/wallet'
+import type { W3mFrameTypes } from '@web3modal-x/wallet'
 import { ChainController } from './ChainController.js'
-import type { Chain } from '@web3modal/common'
+import type { Chain } from '@web3modal-x/common'
 import { NetworkController } from './NetworkController.js'
 import { proxy, ref } from 'valtio/vanilla'
 

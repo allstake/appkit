@@ -1,4 +1,4 @@
-import type { Tokens } from '@web3modal/core'
+import type { Tokens } from '@web3modal-x/core'
 import { ConstantsUtil } from './ConstantsUtil.js'
 
 export const HelpersUtil = {

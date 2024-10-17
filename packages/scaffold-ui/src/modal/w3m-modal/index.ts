@@ -8,17 +8,17 @@ import {
   RouterController,
   SnackController,
   ThemeController
-} from '@web3modal/core'
-import { UiHelperUtil, customElement, initializeTheming } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { UiHelperUtil, customElement, initializeTheming } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
-import type { CaipAddress } from '@web3modal/core'
+import type { CaipAddress } from '@web3modal-x/core'
 
 // -- Helpers --------------------------------------------- //
 const SCROLL_LOCK = 'scroll-lock'
 
-@customElement('w3m-modal')
+@customElement('w3m-modal-x')
 export class W3mModal extends LitElement {
   public static override styles = styles
 
@@ -99,7 +99,7 @@ export class W3mModal extends LitElement {
     const isApproveSignScreen = RouterController.state.view === 'ApproveTransaction'
 
     if (this.isSiweEnabled) {
-      const { SIWEController } = await import('@web3modal/siwe')
+      const { SIWEController } = await import('@web3modal-x/siwe')
       const isUnauthenticated = SIWEController.state.status !== 'success'
       if (isUnauthenticated && (isSiweSignScreen || isApproveSignScreen)) {
         ModalController.shake()
@@ -141,7 +141,7 @@ export class W3mModal extends LitElement {
         overflow: hidden;
         overscroll-behavior: contain;
       }
-      w3m-modal {
+      w3m-modal-x {
         pointer-events: auto;
       }
     `
@@ -192,7 +192,7 @@ export class W3mModal extends LitElement {
     this.caipAddress = caipAddress
 
     if (this.isSiweEnabled) {
-      const { SIWEController } = await import('@web3modal/siwe')
+      const { SIWEController } = await import('@web3modal-x/siwe')
       const session = await SIWEController.getSession()
 
       // If the address has changed and signOnAccountChange is enabled, sign out
@@ -235,6 +235,6 @@ export class W3mModal extends LitElement {
 
 declare global {
   interface HTMLElementTagNameMap {
-    'w3m-modal': W3mModal
+    'w3m-modal-x': W3mModal
   }
 }

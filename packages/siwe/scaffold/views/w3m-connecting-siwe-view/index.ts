@@ -7,12 +7,12 @@ import {
   OptionsController,
   RouterController,
   SnackController
-} from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { SIWEController } from '../../../core/controller/SIWEController.js'
-import { W3mFrameRpcConstants } from '@web3modal/wallet'
+import { W3mFrameRpcConstants } from '@web3modal-x/wallet'
 
 @customElement('w3m-connecting-siwe-view')
 export class W3mConnectingSiweView extends LitElement {

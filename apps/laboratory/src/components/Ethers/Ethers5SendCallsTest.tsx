@@ -1,6 +1,6 @@
 import { Button, Stack, Text, Spacer, Heading } from '@chakra-ui/react'
 import { useState, useEffect } from 'react'
-import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal/ethers5/react'
+import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal-x/ethers5/react'
 import { EthereumProvider } from '@walletconnect/ethereum-provider'
 import { useChakraToast } from '../Toast'
 import type { Address } from 'viem'
@@ -11,7 +11,7 @@ import {
   WALLET_CAPABILITIES,
   getCapabilitySupportedChainInfo
 } from '../../utils/EIP5792Utils'
-import { W3mFrameProvider } from '@web3modal/wallet'
+import { W3mFrameProvider } from '@web3modal-x/wallet'
 
 type Provider = W3mFrameProvider | Awaited<ReturnType<(typeof EthereumProvider)['init']>>
 

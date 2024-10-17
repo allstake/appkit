@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-notice-card'
-import type { WuiNoticeCard } from '@web3modal/ui/src/composites/wui-notice-card'
+import '@web3modal-x/ui/src/composites/wui-notice-card'
+import type { WuiNoticeCard } from '@web3modal-x/ui/src/composites/wui-notice-card'
 import { html } from 'lit'
 import '../../components/gallery-container'
 import { iconOptions } from '../../utils/PresetUtils'

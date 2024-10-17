@@ -1,9 +1,9 @@
-import { OptionsController, RouterUtil } from '@web3modal/core'
+import { OptionsController, RouterUtil } from '@web3modal-x/core'
 
 export const NetworkUtil = {
   onNetworkChange: async () => {
     if (OptionsController.state.isSiweEnabled) {
-      const { SIWEController } = await import('@web3modal/siwe')
+      const { SIWEController } = await import('@web3modal-x/siwe')
       if (SIWEController.state._client?.options?.signOutOnNetworkChange) {
         await SIWEController.signOut()
       } else {

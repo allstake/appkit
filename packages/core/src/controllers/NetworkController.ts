@@ -3,11 +3,11 @@ import type { CaipNetwork, CaipNetworkId } from '../utils/TypeUtil.js'
 import { EventsController } from './EventsController.js'
 import { ModalController } from './ModalController.js'
 import { CoreHelperUtil } from '../utils/CoreHelperUtil.js'
-import { NetworkUtil, type Chain } from '@web3modal/common'
+import { NetworkUtil, type Chain } from '@web3modal-x/common'
 import { ChainController } from './ChainController.js'
 import { PublicStateController } from './PublicStateController.js'
 import { ConstantsUtil } from '../utils/ConstantsUtil.js'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 
 // -- Types --------------------------------------------- //
 export interface NetworkControllerClient {

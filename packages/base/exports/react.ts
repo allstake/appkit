@@ -1,17 +1,17 @@
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
 import { AppKit } from '../src/client.js'
 import type { AppKitOptions } from '../utils/TypesUtil.js'
 import { getWeb3Modal } from '../utils/library/react/index.js'
 
 // -- Views ------------------------------------------------------------
-export * from '@web3modal/scaffold-ui'
+export * from '@web3modal-x/scaffold-ui'
 
 // -- Hooks ------------------------------------------------------------
 export * from '../utils/library/react/index.js'
 
 // -- Utils & Other -----------------------------------------------------
-export type * from '@web3modal/core'
-export { CoreHelperUtil } from '@web3modal/core'
+export type * from '@web3modal-x/core'
+export { CoreHelperUtil } from '@web3modal-x/core'
 
 let modal: AppKit | undefined = undefined
 

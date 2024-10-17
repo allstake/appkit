@@ -1,10 +1,10 @@
 import { Button, Stack, Text, Input } from '@chakra-ui/react'
 import { useState } from 'react'
-import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal/ethers/react'
+import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal-x/ethers/react'
 import { EthereumProvider } from '@walletconnect/ethereum-provider'
 import { useChakraToast } from '../Toast'
 import { BrowserProvider } from 'ethers'
-import { W3mFrameProvider } from '@web3modal/wallet'
+import { W3mFrameProvider } from '@web3modal-x/wallet'
 import { type GetCallsStatusParams } from '../../types/EIP5792'
 import { EIP_5792_RPC_METHODS } from '../../utils/EIP5792Utils'
 

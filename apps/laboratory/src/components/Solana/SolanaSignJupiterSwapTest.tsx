@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Button, Stack, Text, Spacer } from '@chakra-ui/react'
 import { PublicKey, VersionedTransaction } from '@solana/web3.js'
 
-import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal/solana/react'
+import { useWeb3ModalAccount, useWeb3ModalProvider } from '@web3modal-x/solana/react'
 
 import { solana } from '../../utils/ChainsUtil'
 import { useChakraToast } from '../Toast'

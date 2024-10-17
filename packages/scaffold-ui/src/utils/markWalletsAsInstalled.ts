@@ -1,5 +1,5 @@
-import type { WcWallet } from '@web3modal/core'
-import { ConnectorController } from '@web3modal/core'
+import type { WcWallet } from '@web3modal-x/core'
+import { ConnectorController } from '@web3modal-x/core'
 
 export function markWalletsAsInstalled(wallets: WcWallet[]) {
   const { connectors } = ConnectorController.state

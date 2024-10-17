@@ -1,5 +1,5 @@
 {
-  "name": "@web3modal/wagmi",
+  "name": "@web3modal-x/wagmi",
   "version": "5.1.11",
   "type": "module",
   "main": "./dist/esm/exports/index.js",
@@ -54,12 +54,12 @@
   "dependencies": {
     "@walletconnect/ethereum-provider": "2.16.1",
     "@walletconnect/utils": "2.16.1",
-    "@web3modal/polyfills": "workspace:*",
-    "@web3modal/base": "workspace:*",
-    "@web3modal/wallet": "workspace:*",
-    "@web3modal/common": "workspace:*",
-    "@web3modal/scaffold-utils": "workspace:*",
-    "@web3modal/siwe": "workspace:*"
+    "@web3modal-x/polyfills": "workspace:*",
+    "@web3modal-x/base": "workspace:*",
+    "@web3modal-x/wallet": "workspace:*",
+    "@web3modal-x/common": "workspace:*",
+    "@web3modal-x/scaffold-utils": "workspace:*",
+    "@web3modal-x/siwe": "workspace:*"
   },
   "devDependencies": {
     "@wagmi/connectors": "5.1.9",

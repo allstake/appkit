@@ -1,4 +1,4 @@
-import type { W3mFrameProvider } from '@web3modal/wallet'
+import type { W3mFrameProvider } from '@web3modal-x/wallet'
 import type { ProviderInterface } from '@coinbase/wallet-sdk'
 import type { SocialProvider } from '../TypeUtil.js'
 

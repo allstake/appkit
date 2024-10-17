@@ -1,9 +1,9 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-list-social'
+import '@web3modal-x/ui/src/composites/wui-list-social'
 import { html } from 'lit'
 import '../../components/gallery-container'
 
-import type { WuiListSocial } from '@web3modal/ui'
+import type { WuiListSocial } from '@web3modal-x/ui'
 
 type Component = Meta<WuiListSocial>
 

@@ -1,7 +1,7 @@
-import '@web3modal/polyfills'
-import type { SocialProvider } from '@web3modal/scaffold-utils'
+import '@web3modal-x/polyfills'
+import type { SocialProvider } from '@web3modal-x/scaffold-utils'
 
-import type { Chain, Metadata, Provider, ProviderType } from '@web3modal/scaffold-utils/solana'
+import type { Chain, Metadata, Provider, ProviderType } from '@web3modal-x/scaffold-utils/solana'
 
 declare global {
   interface Navigator {

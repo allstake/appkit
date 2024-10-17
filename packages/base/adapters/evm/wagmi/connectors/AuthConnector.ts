@@ -1,11 +1,11 @@
 import { createConnector, type CreateConfigParameters } from '@wagmi/core'
-import { W3mFrameProvider } from '@web3modal/wallet'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+import { W3mFrameProvider } from '@web3modal-x/wallet'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 import { SwitchChainError, getAddress } from 'viem'
 import type { Address, Hex } from 'viem'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
-import type { SocialProvider } from '@web3modal/scaffold-utils'
-import { NetworkUtil } from '@web3modal/common'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
+import type { SocialProvider } from '@web3modal-x/scaffold-utils'
+import { NetworkUtil } from '@web3modal-x/common'
 
 // -- Types ----------------------------------------------------------------------------------------
 interface W3mFrameProviderOptions {

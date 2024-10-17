@@ -8,8 +8,8 @@ import type {
 } from '@solana/web3.js'
 
 import type { SendTransactionOptions } from '@solana/wallet-adapter-base'
-import type { Connector, ConnectorType } from '@web3modal/core'
-import type { W3mFrameTypes } from '@web3modal/wallet'
+import type { Connector, ConnectorType } from '@web3modal-x/core'
+import type { W3mFrameTypes } from '@web3modal-x/wallet'
 
 export type Connection = SolanaConnection
 

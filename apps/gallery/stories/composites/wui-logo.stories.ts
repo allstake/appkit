@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-logo'
-import type { WuiLogo } from '@web3modal/ui/src/composites/wui-logo'
+import '@web3modal-x/ui/src/composites/wui-logo'
+import type { WuiLogo } from '@web3modal-x/ui/src/composites/wui-logo'
 import { html } from 'lit'
 import { logoOptions } from '../../utils/PresetUtils'
 

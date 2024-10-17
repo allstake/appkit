@@ -8,8 +8,8 @@ import {
   NetworkController,
   OptionsController,
   RouterController
-} from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
@@ -151,7 +151,7 @@ export class W3mHeader extends LitElement {
 
   private async onClose() {
     if (this.isSiweEnabled) {
-      const { SIWEController } = await import('@web3modal/siwe')
+      const { SIWEController } = await import('@web3modal-x/siwe')
       const isApproveSignScreen = RouterController.state.view === 'ApproveTransaction'
       const isUnauthenticated = SIWEController.state.status !== 'success'
 

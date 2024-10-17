@@ -1,4 +1,4 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import { W3mEmailOtpWidget } from '../../utils/w3m-email-otp-widget/index.js'
 import type { OnOtpSubmitFn, OnOtpResendFn } from '../../utils/w3m-email-otp-widget/index.js'
 import {
@@ -8,7 +8,7 @@ import {
   NetworkController,
   RouterController,
   AccountController
-} from '@web3modal/core'
+} from '@web3modal-x/core'
 import { state } from 'lit/decorators.js'
 
 @customElement('w3m-email-verify-otp-view')

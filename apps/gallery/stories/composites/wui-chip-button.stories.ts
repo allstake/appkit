@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-chip-button'
-import type { WuiChipButton } from '@web3modal/ui/src/composites/wui-chip-button'
+import '@web3modal-x/ui/src/composites/wui-chip-button'
+import type { WuiChipButton } from '@web3modal-x/ui/src/composites/wui-chip-button'
 import { html } from 'lit'
 import { chipButtonVariants, iconOptions, walletImagesOptions } from '../../utils/PresetUtils'
 

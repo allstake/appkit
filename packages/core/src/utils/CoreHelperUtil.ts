@@ -1,5 +1,5 @@
-import type { Balance, Chain } from '@web3modal/common'
-import { ConstantsUtil as CommonConstants } from '@web3modal/common'
+import type { Balance, Chain } from '@web3modal-x/common'
+import { ConstantsUtil as CommonConstants } from '@web3modal-x/common'
 import { ConstantsUtil } from './ConstantsUtil.js'
 import type { CaipAddress, LinkingRecord, CaipNetwork } from './TypeUtil.js'
 

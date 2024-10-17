@@ -5,7 +5,7 @@ import type { CaipNetwork, ChainAdapter, Connector } from '../utils/TypeUtil.js'
 import { NetworkController, type NetworkControllerState } from './NetworkController.js'
 import { AccountController, type AccountControllerState } from './AccountController.js'
 import { PublicStateController } from './PublicStateController.js'
-import { type Chain } from '@web3modal/common'
+import { type Chain } from '@web3modal-x/common'
 
 // -- Types --------------------------------------------- //
 export interface ChainControllerState {

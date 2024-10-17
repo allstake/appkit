@@ -1,5 +1,5 @@
-import { CoreHelperUtil } from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+import { CoreHelperUtil } from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 
 const data = [

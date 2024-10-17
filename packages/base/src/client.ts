@@ -7,7 +7,7 @@ import type {
   RouterControllerState,
   ChainAdapter,
   CaipNetwork
-} from '@web3modal/core'
+} from '@web3modal-x/core'
 import {
   AccountController,
   BlockchainApiController,
@@ -25,9 +25,9 @@ import {
   OptionsController,
   NetworkController,
   AssetUtil
-} from '@web3modal/core'
-import { setColorTheme, setThemeVariables } from '@web3modal/ui'
-import { ConstantsUtil, type Chain } from '@web3modal/common'
+} from '@web3modal-x/core'
+import { setColorTheme, setThemeVariables } from '@web3modal-x/ui'
+import { ConstantsUtil, type Chain } from '@web3modal-x/common'
 import type { AppKitOptions } from '../utils/TypesUtil.js'
 
 // -- Types --------------------------------------------------------------------
@@ -414,7 +414,7 @@ export class AppKit<AdapterStoreState = unknown, SwitchNetworkParam = unknown> {
     // Set the SIWE client for EVM chains
     if (evmAdapter) {
       if (options.siweConfig) {
-        const { SIWEController } = await import('@web3modal/siwe')
+        const { SIWEController } = await import('@web3modal-x/siwe')
         SIWEController.setSIWEClient(options.siweConfig)
       }
     }
@@ -424,8 +424,8 @@ export class AppKit<AdapterStoreState = unknown, SwitchNetworkParam = unknown> {
     if (!this.initPromise && !isInitialized && CoreHelperUtil.isClient()) {
       isInitialized = true
       this.initPromise = new Promise<void>(async resolve => {
-        await Promise.all([import('@web3modal/ui'), import('@web3modal/scaffold-ui/w3m-modal')])
-        const modal = document.createElement('w3m-modal')
+        await Promise.all([import('@web3modal-x/ui'), import('@web3modal-x/scaffold-ui/w3m-modal')])
+        const modal = document.createElement('w3m-modal-x')
         if (!OptionsController.state.disableAppend) {
           document.body.insertAdjacentElement('beforeend', modal)
         }

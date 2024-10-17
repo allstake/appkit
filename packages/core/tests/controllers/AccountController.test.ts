@@ -1,6 +1,6 @@
 import { beforeAll, describe, expect, it } from 'vitest'
 import { AccountController, ChainController } from '../../index.js'
-import { ConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil } from '@web3modal-x/common'
 
 // -- Setup --------------------------------------------------------------------
 const caipAddress = 'eip155:1:0x123'

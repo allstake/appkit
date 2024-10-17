@@ -1,10 +1,10 @@
-import { EVMWagmiClient } from '@web3modal/base/adapters/evm/wagmi'
+import { EVMWagmiClient } from '@web3modal-x/base/adapters/evm/wagmi'
 import { mainnet } from 'viem/chains'
 import { createConfig, http } from 'wagmi'
 import { mock } from 'wagmi/connectors'
 
 import { generatePrivateKey, privateKeyToAccount } from 'viem/accounts'
-import { AppKit, type SdkVersion } from '@web3modal/base'
+import { AppKit, type SdkVersion } from '@web3modal-x/base'
 
 const privateKey = generatePrivateKey()
 export const mockAccount = privateKeyToAccount(privateKey)

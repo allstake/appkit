@@ -1,12 +1,12 @@
 import { onUnmounted, reactive, ref } from 'vue'
-import type { Event } from '@web3modal/core'
+import type { Event } from '@web3modal-x/core'
 import type {
   W3mAccountButton,
   W3mButton,
   W3mConnectButton,
   W3mNetworkButton,
   W3mOnrampWidget
-} from '@web3modal/scaffold-ui'
+} from '@web3modal-x/scaffold-ui'
 import type { AppKit } from '../../../src/client.js'
 import type { AppKitOptions } from '../../TypesUtil.js'
 

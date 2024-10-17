@@ -1,1 +1,1 @@
-export * as Web3modal from '@web3modal/ethers5'
+export * as Web3modal from '@web3modal-x/ethers5'

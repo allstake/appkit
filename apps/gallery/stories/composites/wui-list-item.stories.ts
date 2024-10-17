@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-list-item'
-import type { WuiListItem } from '@web3modal/ui/src/composites/wui-list-item'
+import '@web3modal-x/ui/src/composites/wui-list-item'
+import type { WuiListItem } from '@web3modal-x/ui/src/composites/wui-list-item'
 import { html } from 'lit'
 import '../../components/gallery-container'
 import { accountEntryOptions, iconOptions, networkImageSrc } from '../../utils/PresetUtils'

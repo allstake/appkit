@@ -73,8 +73,8 @@ async function checkUiPackage() {
       fail(`${f} is using @state decorator, which is not allowed in ui package`)
     }
 
-    if (diff?.added.includes('import @web3modal/core')) {
-      fail(`${f} is importing @web3modal/core, which is not allowed in ui package`)
+    if (diff?.added.includes('import @web3modal-x/core')) {
+      fail(`${f} is importing @web3modal-x/core, which is not allowed in ui package`)
     }
 
     if (!diff?.added.includes(RENDER_COMMENT) && diff?.added.includes('render()')) {
@@ -97,7 +97,7 @@ async function checkUiPackage() {
       fail(`${f} is a ui element, but does not define wui- prefix`)
     }
 
-    if (diff?.added.includes('@web3modal/ui/')) {
+    if (diff?.added.includes('@web3modal-x/ui/')) {
       fail(`${f} should use relative imports instead of direct package access`)
     }
   }
@@ -192,8 +192,8 @@ async function checkCorePackage() {
   for (const f of created_core_controllers) {
     const diff = await diffForFile(f)
 
-    if (diff?.added.includes('import @web3modal/ui')) {
-      fail(`${f} is importing @web3modal/ui, which is not allowed in core package`)
+    if (diff?.added.includes('import @web3modal-x/ui')) {
+      fail(`${f} is importing @web3modal-x/ui, which is not allowed in core package`)
     }
 
     if (!diff?.added.includes(TYPE_COMMENT)) {
@@ -212,7 +212,7 @@ async function checkCorePackage() {
       fail(`${f} is using this.state, use just state`)
     }
 
-    if (diff?.added.includes('@web3modal/core/')) {
+    if (diff?.added.includes('@web3modal-x/core/')) {
       fail(`${f} should use relative imports instead of direct package access`)
     }
 
@@ -273,9 +273,9 @@ async function checkScaffoldHtmlPackage() {
     }
 
     if (
-      diff?.added.includes('@web3modal/core/') ||
-      diff?.added.includes('@web3modal/ui/') ||
-      diff?.added.includes('@web3modal/scaffold/')
+      diff?.added.includes('@web3modal-x/core/') ||
+      diff?.added.includes('@web3modal-x/ui/') ||
+      diff?.added.includes('@web3modal-x/scaffold/')
     ) {
       fail(`${f} should use relative imports instead of direct package access`)
     }
@@ -307,12 +307,12 @@ async function checkClientPackages() {
   for (const f of client_files) {
     const diff = await diffForFile(f)
 
-    if (diff?.added.includes("from '@web3modal/core")) {
-      fail(`${f} is not allowed to import from @web3modal/core`)
+    if (diff?.added.includes("from '@web3modal-x/core")) {
+      fail(`${f} is not allowed to import from @web3modal-x/core`)
     }
 
-    if (diff?.added.includes("from '@web3modal/ui")) {
-      fail(`${f} is not allowed to import from @web3modal/ui`)
+    if (diff?.added.includes("from '@web3modal-x/ui")) {
+      fail(`${f} is not allowed to import from @web3modal-x/ui`)
     }
 
     if (containsRelativeImportWithoutJSExtension(diff?.added)) {

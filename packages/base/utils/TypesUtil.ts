@@ -1,11 +1,11 @@
-import type { ThemeVariables } from '@web3modal/common'
+import type { ThemeVariables } from '@web3modal-x/common'
 import type {
   NetworkControllerState,
   OptionsControllerState,
   ThemeMode,
   Token
-} from '@web3modal/core'
-import type { SIWEControllerClient, Web3ModalSIWEClient } from '@web3modal/siwe'
+} from '@web3modal-x/core'
+import type { SIWEControllerClient, Web3ModalSIWEClient } from '@web3modal-x/siwe'
 
 export type AppKitOptions<ChainType = NetworkControllerState['caipNetwork']> =
   OptionsControllerState & {

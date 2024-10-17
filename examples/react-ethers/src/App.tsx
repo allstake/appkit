@@ -5,7 +5,7 @@ import {
   useWeb3ModalEvents,
   useWeb3ModalState,
   useWeb3ModalTheme
-} from '@web3modal/ethers/react'
+} from '@web3modal-x/ethers/react'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

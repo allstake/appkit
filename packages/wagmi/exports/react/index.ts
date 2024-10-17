@@ -1,13 +1,13 @@
-import { AppKit } from '@web3modal/base'
-import type { AppKitOptions } from '@web3modal/base'
-import { EVMWagmiClient, type AdapterOptions } from '@web3modal/base/adapters/evm/wagmi'
-import { getWeb3Modal } from '@web3modal/base/utils/library/react'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
+import { AppKit } from '@web3modal-x/base'
+import type { AppKitOptions } from '@web3modal-x/base'
+import { EVMWagmiClient, type AdapterOptions } from '@web3modal-x/base/adapters/evm/wagmi'
+import { getWeb3Modal } from '@web3modal-x/base/utils/library/react'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
 import type { Chain } from 'viem'
 import type { Config } from 'wagmi'
 
 // -- Configs -----------------------------------------------------------
-export { defaultWagmiConfig } from '@web3modal/base/adapters/evm/wagmi'
+export { defaultWagmiConfig } from '@web3modal-x/base/adapters/evm/wagmi'
 
 // -- Setup -------------------------------------------------------------------
 let appkit: AppKit | undefined = undefined
@@ -41,4 +41,4 @@ export {
   useWeb3ModalState,
   useWeb3ModalEvents,
   useWalletInfo
-} from '@web3modal/base/utils/library/react'
+} from '@web3modal-x/base/utils/library/react'

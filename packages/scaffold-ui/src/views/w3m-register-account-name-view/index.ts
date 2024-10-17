@@ -1,4 +1,4 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { property, state } from 'lit/decorators.js'
 import styles from './styles.js'
@@ -9,8 +9,8 @@ import {
   EnsController,
   EventsController,
   AccountController
-} from '@web3modal/core'
-import { W3mFrameRpcConstants } from '@web3modal/wallet'
+} from '@web3modal-x/core'
+import { W3mFrameRpcConstants } from '@web3modal-x/wallet'
 
 @customElement('w3m-register-account-name-view')
 export class W3mRegisterAccountNameView extends LitElement {

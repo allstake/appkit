@@ -1,13 +1,13 @@
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
-import { ConstantsUtil, PresetsUtil } from '@web3modal/scaffold-utils'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
+import { ConstantsUtil, PresetsUtil } from '@web3modal-x/scaffold-utils'
 import { EthereumProvider } from '@walletconnect/ethereum-provider'
 import { getChainsFromAccounts } from '@walletconnect/utils'
 import { fallback, http, type Hex } from 'viem'
 
-import type { CaipNetwork, CaipNetworkId } from '@web3modal/core'
+import type { CaipNetwork, CaipNetworkId } from '@web3modal-x/core'
 import type { Chain } from '@wagmi/core/chains'
 import type { Connector } from '@wagmi/core'
-import { CoreHelperUtil } from '@web3modal/core'
+import { CoreHelperUtil } from '@web3modal-x/core'
 
 export function getCaipDefaultChain(chain?: Chain) {
   if (!chain) {

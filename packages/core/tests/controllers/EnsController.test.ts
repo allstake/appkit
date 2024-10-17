@@ -7,8 +7,8 @@ import {
   EnsController,
   NetworkController
 } from '../../index.js'
-import { W3mFrameProvider } from '@web3modal/wallet'
-import { ConstantsUtil } from '@web3modal/common'
+import { W3mFrameProvider } from '@web3modal-x/wallet'
+import { ConstantsUtil } from '@web3modal-x/common'
 // -- Setup --------------------------------------------------------------------
 const TEST_NAME = {
   name: 'test',

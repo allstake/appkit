@@ -6,7 +6,7 @@ import {
   LAMPORTS_PER_SOL,
   ComputeBudgetProgram
 } from '@solana/web3.js'
-import type { Provider } from '@web3modal/scaffold-utils/solana'
+import type { Provider } from '@web3modal-x/scaffold-utils/solana'
 
 type SendTransactionArgs = {
   provider: Provider

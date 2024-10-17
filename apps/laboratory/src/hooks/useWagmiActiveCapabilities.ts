@@ -9,7 +9,7 @@ import {
   getFilteredCapabilitySupportedChainInfo,
   getProviderCachedCapabilities
 } from '../utils/EIP5792Utils'
-import { W3mFrameProvider } from '@web3modal/wallet'
+import { W3mFrameProvider } from '@web3modal-x/wallet'
 
 type UseWagmiAvailableCapabilitiesParams = {
   capability?: string

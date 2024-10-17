@@ -1,17 +1,17 @@
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
 import type {
   AnyTransaction,
   Chain,
   Connection,
   GetActiveChain,
   Provider
-} from '@web3modal/scaffold-utils/solana'
+} from '@web3modal-x/scaffold-utils/solana'
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js'
 import { PublicKey, Transaction, VersionedTransaction, type SendOptions } from '@solana/web3.js'
 import {
   W3mFrameProvider,
   type W3mFrameProviderMethods as ProviderAuthMethods
-} from '@web3modal/wallet'
+} from '@web3modal-x/wallet'
 import { withSolanaNamespace } from '../utils/withSolanaNamespace.js'
 import base58 from 'bs58'
 import { isVersionedTransaction } from '@solana/wallet-adapter-base'

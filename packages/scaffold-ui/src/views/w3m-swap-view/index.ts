@@ -1,4 +1,4 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import styles from './styles.js'
@@ -12,9 +12,9 @@ import {
   type SwapInputTarget,
   EventsController,
   AccountController
-} from '@web3modal/core'
-import { NumberUtil } from '@web3modal/common'
-import { W3mFrameRpcConstants } from '@web3modal/wallet'
+} from '@web3modal-x/core'
+import { NumberUtil } from '@web3modal-x/common'
+import { W3mFrameRpcConstants } from '@web3modal-x/wallet'
 
 @customElement('w3m-swap-view')
 export class W3mSwapView extends LitElement {

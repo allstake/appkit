@@ -1,5 +1,5 @@
 import { PublicKey } from '@solana/web3.js'
-import { ConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil } from '@web3modal-x/common'
 
 export const SolConstantsUtil = {
   UNIVERSAL_PROVIDER_RELAY_URL: 'wss://relay.walletconnect.org',

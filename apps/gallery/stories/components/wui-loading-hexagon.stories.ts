@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/components/wui-loading-hexagon'
-import type { WuiLoadingHexagon } from '@web3modal/ui/src/components/wui-loading-hexagon'
+import '@web3modal-x/ui/src/components/wui-loading-hexagon'
+import type { WuiLoadingHexagon } from '@web3modal-x/ui/src/components/wui-loading-hexagon'
 import { html } from 'lit'
 
 type Component = Meta<WuiLoadingHexagon>

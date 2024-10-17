@@ -1,13 +1,13 @@
-import type { BaseError } from '@web3modal/core'
+import type { BaseError } from '@web3modal-x/core'
 import {
   ConnectionController,
   EventsController,
   ModalController,
   OptionsController,
   RouterController
-} from '@web3modal/core'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
+import { customElement } from '@web3modal-x/ui'
 import { W3mConnectingWidget } from '../../utils/w3m-connecting-widget/index.js'
 
 @customElement('w3m-connecting-external-view')

@@ -7,14 +7,14 @@ import {
   RouterController,
   SnackController,
   type SocialProvider
-} from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 
 import styles from './styles.js'
 import { ifDefined } from 'lit/directives/if-defined.js'
-import { SocialProviderEnum } from '@web3modal/scaffold-utils'
+import { SocialProviderEnum } from '@web3modal-x/scaffold-utils'
 
 const MAX_TOP_VIEW = 2
 const MAXIMUM_LENGTH = 6

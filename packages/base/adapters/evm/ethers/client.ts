@@ -11,13 +11,13 @@ import type {
   SendTransactionArgs,
   Token,
   WriteContractArgs
-} from '@web3modal/core'
-import { ConstantsUtil, PresetsUtil, HelpersUtil } from '@web3modal/scaffold-utils'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+} from '@web3modal-x/core'
+import { ConstantsUtil, PresetsUtil, HelpersUtil } from '@web3modal-x/scaffold-utils'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 import EthereumProvider, { OPTIONAL_METHODS } from '@walletconnect/ethereum-provider'
 import { getChainsFromAccounts } from '@walletconnect/utils'
-import { ConstantsUtil as CommonConstants } from '@web3modal/common'
-import type { Chain as AvailableChain } from '@web3modal/common'
+import { ConstantsUtil as CommonConstants } from '@web3modal-x/common'
+import type { Chain as AvailableChain } from '@web3modal-x/common'
 import type {
   Address,
   Metadata,
@@ -25,7 +25,7 @@ import type {
   ProviderType,
   Chain,
   EthersStoreUtilState
-} from '@web3modal/scaffold-utils/ethers'
+} from '@web3modal-x/scaffold-utils/ethers'
 import {
   formatEther,
   JsonRpcProvider,
@@ -44,16 +44,16 @@ import {
   EthersConstantsUtil,
   EthersHelpersUtil,
   EthersStoreUtil
-} from '@web3modal/scaffold-utils/ethers'
+} from '@web3modal-x/scaffold-utils/ethers'
 import type { EthereumProviderOptions } from '@walletconnect/ethereum-provider'
 import type { Eip1193Provider } from 'ethers'
-import { W3mFrameProvider, W3mFrameHelpers, W3mFrameRpcConstants } from '@web3modal/wallet'
-import type { CombinedProvider } from '@web3modal/scaffold-utils/ethers'
-import { NetworkUtil } from '@web3modal/common'
-import type { W3mFrameTypes } from '@web3modal/wallet'
+import { W3mFrameProvider, W3mFrameHelpers, W3mFrameRpcConstants } from '@web3modal-x/wallet'
+import type { CombinedProvider } from '@web3modal-x/scaffold-utils/ethers'
+import { NetworkUtil } from '@web3modal-x/common'
+import type { W3mFrameTypes } from '@web3modal-x/wallet'
 import type { AppKit } from '../../../src/client.js'
 import type { AppKitOptions } from '../../../utils/TypesUtil.js'
-import type { OptionsControllerState } from '@web3modal/core'
+import type { OptionsControllerState } from '@web3modal-x/core'
 import { SafeLocalStorage } from '../../../utils/SafeLocalStorage.js'
 
 // -- Types ---------------------------------------------------------------------
@@ -219,7 +219,7 @@ export class EVMEthersClient implements ChainAdapter<EthersStoreUtilState, numbe
         const params = await siweConfig?.getMessageParams?.()
         // Must perform these checks to satisfy optional types
         if (siweConfig?.options?.enabled && params && Object.keys(params || {}).length > 0) {
-          const { SIWEController, getDidChainId, getDidAddress } = await import('@web3modal/siwe')
+          const { SIWEController, getDidChainId, getDidAddress } = await import('@web3modal-x/siwe')
 
           // Make active chain first in requested chains to make it default for siwe message
           const chainId = NetworkUtil.caipNetworkIdToNumber(this.appKit?.getCaipNetwork()?.id)
@@ -347,7 +347,7 @@ export class EVMEthersClient implements ChainAdapter<EthersStoreUtilState, numbe
         EthersStoreUtil.reset()
         this.appKit?.setClientId(null)
         if (siweConfig?.options?.signOutOnDisconnect) {
-          const { SIWEController } = await import('@web3modal/siwe')
+          const { SIWEController } = await import('@web3modal-x/siwe')
           await SIWEController.signOut()
         }
         if (

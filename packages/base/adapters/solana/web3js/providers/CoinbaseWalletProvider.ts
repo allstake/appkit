@@ -1,4 +1,4 @@
-import { type AnyTransaction, type Chain, type Provider } from '@web3modal/scaffold-utils/solana'
+import { type AnyTransaction, type Chain, type Provider } from '@web3modal-x/scaffold-utils/solana'
 import { ProviderEventEmitter } from './shared/ProviderEventEmitter.js'
 import type { Connection, PublicKey, SendOptions } from '@solana/web3.js'
 import { solana } from '../utils/chains.js'

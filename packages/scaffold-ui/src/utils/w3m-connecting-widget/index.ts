@@ -5,8 +5,8 @@ import {
   RouterController,
   SnackController,
   ThemeController
-} from '@web3modal/core'
-import type { IconType } from '@web3modal/ui'
+} from '@web3modal-x/core'
+import type { IconType } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { property, state } from 'lit/decorators.js'
 import { ifDefined } from 'lit/directives/if-defined.js'

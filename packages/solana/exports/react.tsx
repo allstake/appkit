@@ -1,20 +1,20 @@
 'use client'
 
 import { useSnapshot } from 'valtio'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
-import { getWeb3Modal } from '@web3modal/base/utils/library/react'
-import { AppKit, type CaipNetwork } from '@web3modal/base'
-import { SolanaWeb3JsClient } from '@web3modal/base/adapters/solana/web3js'
-import { SolStoreUtil } from '@web3modal/scaffold-utils/solana'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
+import { getWeb3Modal } from '@web3modal-x/base/utils/library/react'
+import { AppKit, type CaipNetwork } from '@web3modal-x/base'
+import { SolanaWeb3JsClient } from '@web3modal-x/base/adapters/solana/web3js'
+import { SolStoreUtil } from '@web3modal-x/scaffold-utils/solana'
 import type {
   Connection,
   Provider,
   SolStoreUtilState
-} from '@web3modal/base/adapters/solana/web3js'
+} from '@web3modal-x/base/adapters/solana/web3js'
 import type { SolanaAppKitOptions } from './options'
 
 // -- Configs -----------------------------------------------------------
-export { defaultSolanaConfig } from '@web3modal/base/adapters/solana/web3js'
+export { defaultSolanaConfig } from '@web3modal-x/base/adapters/solana/web3js'
 
 // -- Types -------------------------------------------------------------------
 export type { SolanaAppKitOptions, Provider }
@@ -85,4 +85,4 @@ export {
   useWeb3Modal,
   useWeb3ModalState,
   useWeb3ModalEvents
-} from '@web3modal/base/utils/library/react'
+} from '@web3modal-x/base/utils/library/react'

@@ -1,5 +1,5 @@
-import { OptionsController } from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+import { OptionsController } from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import styles from './styles.js'
 

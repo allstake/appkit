@@ -1,14 +1,14 @@
-import { AppKit } from '@web3modal/base'
-import type { AppKitOptions } from '@web3modal/base'
-import { EVMEthers5Client, type AdapterOptions } from '@web3modal/base/adapters/evm/ethers5'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
-import { getWeb3Modal } from '@web3modal/base/utils/library/vue'
+import { AppKit } from '@web3modal-x/base'
+import type { AppKitOptions } from '@web3modal-x/base'
+import { EVMEthers5Client, type AdapterOptions } from '@web3modal-x/base/adapters/evm/ethers5'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
+import { getWeb3Modal } from '@web3modal-x/base/utils/library/vue'
 import { onUnmounted, ref } from 'vue'
 import { ethers } from 'ethers'
-import { type Chain, type EthersStoreUtilState } from '@web3modal/scaffold-utils/ethers'
+import { type Chain, type EthersStoreUtilState } from '@web3modal-x/scaffold-utils/ethers'
 
 // -- Configs -----------------------------------------------------------
-export { defaultConfig } from '@web3modal/base/adapters/evm/ethers5'
+export { defaultConfig } from '@web3modal-x/base/adapters/evm/ethers5'
 
 // -- Setup -------------------------------------------------------------------
 let appkit: AppKit<EthersStoreUtilState, number> | undefined = undefined
@@ -136,4 +136,4 @@ export {
   useWeb3ModalState,
   useWeb3ModalEvents,
   useWalletInfo
-} from '@web3modal/base/utils/library/vue'
+} from '@web3modal-x/base/utils/library/vue'

@@ -19,7 +19,7 @@ import {
   switchAccount,
   reconnect
 } from '@wagmi/core'
-import type { ChainAdapter, OptionsControllerState } from '@web3modal/core'
+import type { ChainAdapter, OptionsControllerState } from '@web3modal-x/core'
 import { mainnet } from 'viem/chains'
 import { prepareTransactionRequest, sendTransaction as wagmiSendTransaction } from '@wagmi/core'
 import type { Chain } from '@wagmi/core/chains'
@@ -34,24 +34,24 @@ import type {
   SendTransactionArgs,
   SocialProvider,
   WriteContractArgs
-} from '@web3modal/core'
+} from '@web3modal-x/core'
 import { formatUnits, parseUnits } from 'viem'
 import type { Hex } from 'viem'
-import { ConstantsUtil, PresetsUtil, HelpersUtil } from '@web3modal/scaffold-utils'
-import { ConstantsUtil as CommonConstants } from '@web3modal/common'
+import { ConstantsUtil, PresetsUtil, HelpersUtil } from '@web3modal-x/scaffold-utils'
+import { ConstantsUtil as CommonConstants } from '@web3modal-x/common'
 import {
   getCaipDefaultChain,
   getEmailCaipNetworks,
   getWalletConnectCaipNetworks,
   requireCaipAddress
 } from './utils/helpers.js'
-import { W3mFrameHelpers, W3mFrameRpcConstants } from '@web3modal/wallet'
-import type { W3mFrameProvider, W3mFrameTypes } from '@web3modal/wallet'
-import { NetworkUtil } from '@web3modal/common'
+import { W3mFrameHelpers, W3mFrameRpcConstants } from '@web3modal-x/wallet'
+import type { W3mFrameProvider, W3mFrameTypes } from '@web3modal-x/wallet'
+import { NetworkUtil } from '@web3modal-x/common'
 import { normalize } from 'viem/ens'
 import type { AppKitOptions } from '../../../utils/TypesUtil.js'
-import type { Chain as AvailableChain, CaipNetworkId } from '@web3modal/common'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+import type { Chain as AvailableChain, CaipNetworkId } from '@web3modal-x/common'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 import type { AppKit } from '../../../src/client.js'
 
 // -- Types ---------------------------------------------------------------------
@@ -163,7 +163,7 @@ export class EVMWagmiClient implements ChainAdapter {
           siweParams &&
           Object.keys(siweParams || {}).length > 0
         ) {
-          const { SIWEController, getDidChainId, getDidAddress } = await import('@web3modal/siwe')
+          const { SIWEController, getDidChainId, getDidAddress } = await import('@web3modal-x/siwe')
 
           // @ts-expect-error - setting requested chains beforehand avoids wagmi auto disconnecting the session when `connect` is called because it things chains are stale
           await connector.setRequestedChainsIds(siweParams.chains)
@@ -266,7 +266,7 @@ export class EVMWagmiClient implements ChainAdapter {
         await disconnect(this.wagmiConfig)
         this.appKit?.setClientId(null)
         if (this.options?.siweConfig?.options?.signOutOnDisconnect) {
-          const { SIWEController } = await import('@web3modal/siwe')
+          const { SIWEController } = await import('@web3modal-x/siwe')
           await SIWEController.signOut()
         }
       },

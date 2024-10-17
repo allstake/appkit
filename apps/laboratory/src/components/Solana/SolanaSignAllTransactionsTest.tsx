@@ -8,11 +8,11 @@ import {
   SystemProgram
 } from '@solana/web3.js'
 
-import { useWeb3ModalAccount, useWeb3ModalProvider, type Provider } from '@web3modal/solana/react'
+import { useWeb3ModalAccount, useWeb3ModalProvider, type Provider } from '@web3modal-x/solana/react'
 
 import { solana } from '../../utils/ChainsUtil'
 import { useChakraToast } from '../Toast'
-import type { Connection } from '@web3modal/base/adapters/solana/web3js'
+import type { Connection } from '@web3modal-x/base/adapters/solana/web3js'
 import bs58 from 'bs58'
 
 const PHANTOM_DEVNET_ADDRESS = '8vCyX7oB6Pc3pbWMGYYZF5pbSnAdQ7Gyr32JqxqCy8ZR'

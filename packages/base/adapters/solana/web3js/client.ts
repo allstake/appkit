@@ -6,11 +6,11 @@ import {
   EventsController,
   NetworkController,
   OptionsController
-} from '@web3modal/core'
-import { ConstantsUtil, PresetsUtil } from '@web3modal/scaffold-utils'
-import { ConstantsUtil as CommonConstantsUtil } from '@web3modal/common'
+} from '@web3modal-x/core'
+import { ConstantsUtil, PresetsUtil } from '@web3modal-x/scaffold-utils'
+import { ConstantsUtil as CommonConstantsUtil } from '@web3modal-x/common'
 
-import { SolConstantsUtil, SolHelpersUtil, SolStoreUtil } from '@web3modal/scaffold-utils/solana'
+import { SolConstantsUtil, SolHelpersUtil, SolStoreUtil } from '@web3modal-x/scaffold-utils/solana'
 
 import type { BaseWalletAdapter } from '@solana/wallet-adapter-base'
 import { PublicKey, type Commitment, type ConnectionConfig } from '@solana/web3.js'
@@ -24,15 +24,15 @@ import type {
   CaipAddress,
   CaipNetwork,
   ChainAdapter
-} from '@web3modal/core'
-import type { Chain as AvailableChain } from '@web3modal/common'
+} from '@web3modal-x/core'
+import type { Chain as AvailableChain } from '@web3modal-x/common'
 
 import type {
   ProviderType,
   Chain,
   Provider,
   SolStoreUtilState
-} from '@web3modal/scaffold-utils/solana'
+} from '@web3modal-x/scaffold-utils/solana'
 import { watchStandard } from './utils/watchStandard.js'
 import { WalletConnectProvider } from './providers/WalletConnectProvider.js'
 import { AuthProvider } from './providers/AuthProvider.js'
@@ -41,11 +41,11 @@ import {
   W3mFrameProvider,
   W3mFrameRpcConstants,
   type W3mFrameTypes
-} from '@web3modal/wallet'
+} from '@web3modal-x/wallet'
 import { withSolanaNamespace } from './utils/withSolanaNamespace.js'
 import type { AppKit } from '../../../src/client.js'
 import type { AppKitOptions } from '../../../utils/TypesUtil.js'
-import type { OptionsControllerState } from '@web3modal/core'
+import type { OptionsControllerState } from '@web3modal-x/core'
 import { SafeLocalStorage } from '../../../utils/SafeLocalStorage.js'
 import { createSendTransaction } from './utils/createSendTransaction.js'
 import { CoinbaseWalletProvider } from './providers/CoinbaseWalletProvider.js'

@@ -1,4 +1,4 @@
-import { customElement } from '@web3modal/ui'
+import { customElement } from '@web3modal-x/ui'
 import {
   ConnectionController,
   ConnectorController,
@@ -6,11 +6,11 @@ import {
   CoreHelperUtil,
   RouterUtil,
   SnackController
-} from '@web3modal/core'
+} from '@web3modal-x/core'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
-import { W3mFrameRpcConstants } from '@web3modal/wallet'
-import { NavigationUtil } from '@web3modal/common'
+import { W3mFrameRpcConstants } from '@web3modal-x/wallet'
+import { NavigationUtil } from '@web3modal-x/common'
 
 @customElement('w3m-upgrade-to-smart-account-view')
 export class W3mUpgradeToSmartAccountView extends LitElement {

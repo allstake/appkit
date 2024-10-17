@@ -1,6 +1,6 @@
 import type { Meta } from '@storybook/web-components'
-import '@web3modal/ui/src/composites/wui-search-bar'
-import type { WuiSearchBar } from '@web3modal/ui/src/composites/wui-search-bar'
+import '@web3modal-x/ui/src/composites/wui-search-bar'
+import type { WuiSearchBar } from '@web3modal-x/ui/src/composites/wui-search-bar'
 import { html } from 'lit'
 import '../../components/gallery-container'
 

@@ -6,7 +6,7 @@ import {
   useWeb3ModalEvents,
   useWeb3ModalState,
   useWeb3ModalTheme
-} from '@web3modal/ethers5/vue'
+} from '@web3modal-x/ethers5/vue'
 
 // @ts-expect-error 1. Get projectId
 const projectId = import.meta.env.VITE_PROJECT_ID

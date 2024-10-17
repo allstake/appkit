@@ -1,4 +1,4 @@
-import { createWeb3Modal } from '@web3modal/wagmi/react'
+import { createWeb3Modal } from '@web3modal-x/wagmi/react'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import { useEffect, useState } from 'react'
 import { WagmiProvider, createConfig, http } from 'wagmi'

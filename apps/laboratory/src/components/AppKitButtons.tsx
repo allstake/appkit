@@ -1,9 +1,9 @@
 import { useRouter } from 'next/router'
 
-import { useWeb3Modal as useWeb3ModalEthers } from '@web3modal/ethers/react'
-import { useWeb3Modal as useWeb3ModalSolana } from '@web3modal/solana/react'
-import { useWeb3Modal as useWeb3ModalEthers5 } from '@web3modal/ethers5/react'
-import { useWeb3Modal as useWeb3ModalWagmi } from '@web3modal/wagmi/react'
+import { useWeb3Modal as useWeb3ModalEthers } from '@web3modal-x/ethers/react'
+import { useWeb3Modal as useWeb3ModalSolana } from '@web3modal-x/solana/react'
+import { useWeb3Modal as useWeb3ModalEthers5 } from '@web3modal-x/ethers5/react'
+import { useWeb3Modal as useWeb3ModalWagmi } from '@web3modal-x/wagmi/react'
 import {
   Stack,
   Card,

@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from 'vitest'
 import type { CaipNetwork, CaipNetworkId, NetworkControllerClient } from '../../index.js'
 import { ChainController, EventsController, NetworkController } from '../../index.js'
-import { ConstantsUtil } from '@web3modal/common'
+import { ConstantsUtil } from '@web3modal-x/common'
 
 // -- Setup --------------------------------------------------------------------
 const caipNetwork = { id: 'eip155:1', name: 'Ethereum', chain: ConstantsUtil.CHAIN.EVM } as const

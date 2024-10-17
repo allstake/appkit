@@ -1,12 +1,12 @@
-import { ChainController, ConnectorController, CoreHelperUtil } from '@web3modal/core'
-import { customElement } from '@web3modal/ui'
+import { ChainController, ConnectorController, CoreHelperUtil } from '@web3modal-x/core'
+import { customElement } from '@web3modal-x/ui'
 import { LitElement, html } from 'lit'
 import { state } from 'lit/decorators.js'
 import { ref, createRef } from 'lit/directives/ref.js'
 import type { Ref } from 'lit/directives/ref.js'
 import styles from './styles.js'
-import { SnackController, RouterController, EventsController } from '@web3modal/core'
-import { ConstantsUtil } from '@web3modal/common'
+import { SnackController, RouterController, EventsController } from '@web3modal-x/core'
+import { ConstantsUtil } from '@web3modal-x/common'
 
 @customElement('w3m-email-login-widget')
 export class W3mEmailLoginWidget extends LitElement {

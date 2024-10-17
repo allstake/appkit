@@ -1,18 +1,18 @@
-import { AppKit } from '@web3modal/base'
-import type { AppKitOptions } from '@web3modal/base'
-import { EVMWagmiClient, type AdapterOptions } from '@web3modal/base/adapters/evm/wagmi'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
+import { AppKit } from '@web3modal-x/base'
+import type { AppKitOptions } from '@web3modal-x/base'
+import { EVMWagmiClient, type AdapterOptions } from '@web3modal-x/base/adapters/evm/wagmi'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
 import type { Chain } from 'viem'
 import type { Config } from 'wagmi'
 
 // -- Types -------------------------------------------------------------
-export type { AdapterOptions } from '@web3modal/base/adapters/evm/wagmi'
+export type { AdapterOptions } from '@web3modal-x/base/adapters/evm/wagmi'
 
 // -- Connectors --------------------------------------------------------
-export { authConnector } from '@web3modal/base/adapters/evm/wagmi'
+export { authConnector } from '@web3modal-x/base/adapters/evm/wagmi'
 
 // -- Configs -----------------------------------------------------------
-export { defaultWagmiConfig } from '@web3modal/base/adapters/evm/wagmi'
+export { defaultWagmiConfig } from '@web3modal-x/base/adapters/evm/wagmi'
 
 // -- Setup -------------------------------------------------------------
 export type WagmiAppKitOptions = Omit<AppKitOptions<Chain>, 'adapters' | 'sdkType' | 'sdkVersion'> &

@@ -1,20 +1,20 @@
 'use client'
 
-import { AppKit } from '@web3modal/base'
-import type { AppKitOptions } from '@web3modal/base'
-import { EVMEthersClient, type AdapterOptions } from '@web3modal/base/adapters/evm/ethers'
-import { ConstantsUtil } from '@web3modal/scaffold-utils'
+import { AppKit } from '@web3modal-x/base'
+import type { AppKitOptions } from '@web3modal-x/base'
+import { EVMEthersClient, type AdapterOptions } from '@web3modal-x/base/adapters/evm/ethers'
+import { ConstantsUtil } from '@web3modal-x/scaffold-utils'
 import {
   EthersStoreUtil,
   type Chain,
   type EthersStoreUtilState
-} from '@web3modal/scaffold-utils/ethers'
-import { getWeb3Modal } from '@web3modal/base/utils/library/react'
+} from '@web3modal-x/scaffold-utils/ethers'
+import { getWeb3Modal } from '@web3modal-x/base/utils/library/react'
 import { useSnapshot } from 'valtio'
 import type { Eip1193Provider } from 'ethers'
 
 // -- Configs -----------------------------------------------------------
-export { defaultConfig } from '@web3modal/base/adapters/evm/ethers'
+export { defaultConfig } from '@web3modal-x/base/adapters/evm/ethers'
 
 // -- Setup -------------------------------------------------------------------
 let appkit: AppKit<EthersStoreUtilState, number> | undefined = undefined
@@ -103,4 +103,4 @@ export {
   useWeb3ModalState,
   useWeb3ModalEvents,
   useWalletInfo
-} from '@web3modal/base/utils/library/react'
+} from '@web3modal-x/base/utils/library/react'
