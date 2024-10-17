@@ -39,7 +39,7 @@ export function WagmiSignMessageTest() {
       >
         Sign Message
       </Button>
-      <div data-testid="w3m-signature" hidden>
+      <div data-testid="w3mx-signature" hidden>
         {signature}
       </div>
     </>

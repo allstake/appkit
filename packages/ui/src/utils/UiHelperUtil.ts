@@ -47,7 +47,7 @@ export const UiHelperUtil = {
     const baseColor = hash.substring(0, 6)
     const rgbColor = this.hexToRgb(baseColor)
     const masterBorderRadius = getComputedStyle(document.documentElement).getPropertyValue(
-      '--w3m-border-radius-master'
+      '--w3mx-border-radius-master'
     )
     const radius = Number(masterBorderRadius?.replace('px', ''))
     const edge = 100 - 3 * radius

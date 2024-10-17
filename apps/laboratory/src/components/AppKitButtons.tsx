@@ -46,19 +46,19 @@ export function AppKitButtons() {
             <Heading size="xs" textTransform="uppercase" pb="2">
               Connect / Account Button
             </Heading>
-            <w3m-button />
+            <w3mx-button />
           </Box>
           <Box>
             <Heading size="xs" textTransform="uppercase" pb="2">
               Network Button
             </Heading>
-            <w3m-network-button />
+            <w3mx-network-button />
           </Box>
           <Box>
             <Heading size="xs" textTransform="uppercase" pb="2">
               Hooks Interactions
             </Heading>
-            <Button data-testid="w3m-open-hook-button" onClick={openModalWithHook}>
+            <Button data-testid="w3mx-open-hook-button" onClick={openModalWithHook}>
               Open
             </Button>
           </Box>

@@ -44,7 +44,7 @@ function createRootStyles(themeVariables?: ThemeVariables) {
   return {
     core: css`
       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-      @keyframes w3m-shake {
+      @keyframes w3mx-shake {
         0% {
           transform: scale(1) rotate(0deg);
         }
@@ -64,7 +64,7 @@ function createRootStyles(themeVariables?: ThemeVariables) {
           transform: scale(1) rotate(0deg);
         }
       }
-      @keyframes w3m-iframe-fade-out {
+      @keyframes w3mx-iframe-fade-out {
         0% {
           opacity: 1;
         }
@@ -72,7 +72,7 @@ function createRootStyles(themeVariables?: ThemeVariables) {
           opacity: 0;
         }
       }
-      @keyframes w3m-iframe-zoom-in {
+      @keyframes w3mx-iframe-zoom-in {
         0% {
           transform: translateY(50px);
           opacity: 0;
@@ -82,7 +82,7 @@ function createRootStyles(themeVariables?: ThemeVariables) {
           opacity: 1;
         }
       }
-      @keyframes w3m-iframe-zoom-in-mobile {
+      @keyframes w3mx-iframe-zoom-in-mobile {
         0% {
           transform: scale(0.95);
           opacity: 0;
@@ -93,44 +93,44 @@ function createRootStyles(themeVariables?: ThemeVariables) {
         }
       }
       :root {
-        --w3m-modal-width: 360px;
-        --w3m-color-mix-strength: ${unsafeCSS(
-          themeVariables?.['--w3m-color-mix-strength']
-            ? `${themeVariables['--w3m-color-mix-strength']}%`
+        --w3mx-modal-width: 360px;
+        --w3mx-color-mix-strength: ${unsafeCSS(
+          themeVariables?.['--w3mx-color-mix-strength']
+            ? `${themeVariables['--w3mx-color-mix-strength']}%`
             : '0%'
         )};
-        --w3m-font-family: ${unsafeCSS(
-          themeVariables?.['--w3m-font-family'] ||
+        --w3mx-font-family: ${unsafeCSS(
+          themeVariables?.['--w3mx-font-family'] ||
             'Inter, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;'
         )};
-        --w3m-font-size-master: ${unsafeCSS(themeVariables?.['--w3m-font-size-master'] || '10px')};
-        --w3m-border-radius-master: ${unsafeCSS(
-          themeVariables?.['--w3m-border-radius-master'] || '4px'
+        --w3mx-font-size-master: ${unsafeCSS(themeVariables?.['--w3mx-font-size-master'] || '10px')};
+        --w3mx-border-radius-master: ${unsafeCSS(
+          themeVariables?.['--w3mx-border-radius-master'] || '4px'
         )};
-        --w3m-z-index: ${unsafeCSS(themeVariables?.['--w3m-z-index'] || 999)};
+        --w3mx-z-index: ${unsafeCSS(themeVariables?.['--w3mx-z-index'] || 999)};
 
-        --wui-font-family: var(--w3m-font-family);
+        --wui-font-family: var(--w3mx-font-family);
 
-        --wui-font-size-mini: calc(var(--w3m-font-size-master) * 0.8);
-        --wui-font-size-micro: var(--w3m-font-size-master);
-        --wui-font-size-tiny: calc(var(--w3m-font-size-master) * 1.2);
-        --wui-font-size-small: calc(var(--w3m-font-size-master) * 1.4);
-        --wui-font-size-paragraph: calc(var(--w3m-font-size-master) * 1.6);
-        --wui-font-size-medium: calc(var(--w3m-font-size-master) * 1.8);
-        --wui-font-size-large: calc(var(--w3m-font-size-master) * 2);
-        --wui-font-size-title-6: calc(var(--w3m-font-size-master) * 2.2);
-        --wui-font-size-medium-title: calc(var(--w3m-font-size-master) * 2.4);
-        --wui-font-size-2xl: calc(var(--w3m-font-size-master) * 4);
+        --wui-font-size-mini: calc(var(--w3mx-font-size-master) * 0.8);
+        --wui-font-size-micro: var(--w3mx-font-size-master);
+        --wui-font-size-tiny: calc(var(--w3mx-font-size-master) * 1.2);
+        --wui-font-size-small: calc(var(--w3mx-font-size-master) * 1.4);
+        --wui-font-size-paragraph: calc(var(--w3mx-font-size-master) * 1.6);
+        --wui-font-size-medium: calc(var(--w3mx-font-size-master) * 1.8);
+        --wui-font-size-large: calc(var(--w3mx-font-size-master) * 2);
+        --wui-font-size-title-6: calc(var(--w3mx-font-size-master) * 2.2);
+        --wui-font-size-medium-title: calc(var(--w3mx-font-size-master) * 2.4);
+        --wui-font-size-2xl: calc(var(--w3mx-font-size-master) * 4);
 
-        --wui-border-radius-5xs: var(--w3m-border-radius-master);
-        --wui-border-radius-4xs: calc(var(--w3m-border-radius-master) * 1.5);
-        --wui-border-radius-3xs: calc(var(--w3m-border-radius-master) * 2);
-        --wui-border-radius-xxs: calc(var(--w3m-border-radius-master) * 3);
-        --wui-border-radius-xs: calc(var(--w3m-border-radius-master) * 4);
-        --wui-border-radius-s: calc(var(--w3m-border-radius-master) * 5);
-        --wui-border-radius-m: calc(var(--w3m-border-radius-master) * 7);
-        --wui-border-radius-l: calc(var(--w3m-border-radius-master) * 9);
-        --wui-border-radius-3xl: calc(var(--w3m-border-radius-master) * 20);
+        --wui-border-radius-5xs: var(--w3mx-border-radius-master);
+        --wui-border-radius-4xs: calc(var(--w3mx-border-radius-master) * 1.5);
+        --wui-border-radius-3xs: calc(var(--w3mx-border-radius-master) * 2);
+        --wui-border-radius-xxs: calc(var(--w3mx-border-radius-master) * 3);
+        --wui-border-radius-xs: calc(var(--w3mx-border-radius-master) * 4);
+        --wui-border-radius-s: calc(var(--w3mx-border-radius-master) * 5);
+        --wui-border-radius-m: calc(var(--w3mx-border-radius-master) * 7);
+        --wui-border-radius-l: calc(var(--w3mx-border-radius-master) * 9);
+        --wui-border-radius-3xl: calc(var(--w3mx-border-radius-master) * 20);
 
         --wui-font-weight-light: 400;
         --wui-font-weight-regular: 500;
@@ -270,7 +270,7 @@ function createRootStyles(themeVariables?: ThemeVariables) {
         :root {
           --wui-color-modal-bg: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-modal-bg-base)
           );
 
@@ -329,143 +329,143 @@ function createRootStyles(themeVariables?: ThemeVariables) {
 
           --wui-color-fg-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-100)
           );
           --wui-color-fg-125: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-125)
           );
           --wui-color-fg-150: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-150)
           );
           --wui-color-fg-175: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-175)
           );
           --wui-color-fg-200: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-200)
           );
           --wui-color-fg-225: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-225)
           );
           --wui-color-fg-250: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-250)
           );
           --wui-color-fg-275: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-275)
           );
           --wui-color-fg-300: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-fg-300)
           );
 
           --wui-color-bg-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-100)
           );
           --wui-color-bg-125: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-125)
           );
           --wui-color-bg-150: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-150)
           );
           --wui-color-bg-175: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-175)
           );
           --wui-color-bg-200: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-200)
           );
           --wui-color-bg-225: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-225)
           );
           --wui-color-bg-250: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-250)
           );
           --wui-color-bg-275: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-275)
           );
           --wui-color-bg-300: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-bg-300)
           );
 
           --wui-color-success-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-success-base-100)
           );
           --wui-color-error-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-color-error-base-100)
           );
 
           --wui-icon-box-bg-error-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-icon-box-bg-error-base-100)
           );
           --wui-icon-box-bg-accent-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-icon-box-bg-blue-base-100)
           );
           --wui-icon-box-bg-success-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-icon-box-bg-success-base-100)
           );
           --wui-icon-box-bg-inverse-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-icon-box-bg-inverse-base-100)
           );
 
           --wui-all-wallets-bg-100: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-all-wallets-bg-100)
           );
 
           --wui-avatar-border: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-avatar-border-base)
           );
 
           --wui-thumbnail-border: color-mix(
             in srgb,
-            var(--w3m-color-mix) var(--w3m-color-mix-strength),
+            var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
             var(--wui-thumbnail-border-base)
           );
         }
@@ -473,14 +473,14 @@ function createRootStyles(themeVariables?: ThemeVariables) {
     `,
     light: css`
       :root {
-        --w3m-color-mix: ${unsafeCSS(themeVariables?.['--w3m-color-mix'] || '#fff')};
-        --w3m-accent: ${unsafeCSS(getW3mThemeVariables(themeVariables, 'dark')['--w3m-accent'])};
-        --w3m-default: #fff;
+        --w3mx-color-mix: ${unsafeCSS(themeVariables?.['--w3mx-color-mix'] || '#fff')};
+        --w3mx-accent: ${unsafeCSS(getW3mThemeVariables(themeVariables, 'dark')['--w3mx-accent'])};
+        --w3mx-default: #fff;
 
         --wui-color-modal-bg-base: ${unsafeCSS(
-          getW3mThemeVariables(themeVariables, 'dark')['--w3m-background']
+          getW3mThemeVariables(themeVariables, 'dark')['--w3mx-background']
         )};
-        --wui-color-accent-base-100: var(--w3m-accent);
+        --wui-color-accent-base-100: var(--w3mx-accent);
 
         --wui-color-blueberry-100: hsla(230, 100%, 67%, 1);
         --wui-color-blueberry-090: hsla(231, 76%, 61%, 1);
@@ -558,14 +558,14 @@ function createRootStyles(themeVariables?: ThemeVariables) {
     `,
     dark: css`
       :root {
-        --w3m-color-mix: ${unsafeCSS(themeVariables?.['--w3m-color-mix'] || '#000')};
-        --w3m-accent: ${unsafeCSS(getW3mThemeVariables(themeVariables, 'light')['--w3m-accent'])};
-        --w3m-default: #000;
+        --w3mx-color-mix: ${unsafeCSS(themeVariables?.['--w3mx-color-mix'] || '#000')};
+        --w3mx-accent: ${unsafeCSS(getW3mThemeVariables(themeVariables, 'light')['--w3mx-accent'])};
+        --w3mx-default: #000;
 
         --wui-color-modal-bg-base: ${unsafeCSS(
-          getW3mThemeVariables(themeVariables, 'light')['--w3m-background']
+          getW3mThemeVariables(themeVariables, 'light')['--w3mx-background']
         )};
-        --wui-color-accent-base-100: var(--w3m-accent);
+        --wui-color-accent-base-100: var(--w3mx-accent);
 
         --wui-color-blueberry-100: hsla(231, 100%, 70%, 1);
         --wui-color-blueberry-090: hsla(231, 97%, 72%, 1);

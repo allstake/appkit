@@ -33,7 +33,7 @@ export class ModalWalletValidator extends ModalValidator {
   }
 
   async expectChangedAddressAfterSwitchingAccountType(previousAddress: string) {
-    await expect(this.page.getByTestId('w3m-address')).not.toHaveText(previousAddress)
+    await expect(this.page.getByTestId('w3mx-address')).not.toHaveText(previousAddress)
   }
 
   override async expectSwitchedNetwork(network: string) {

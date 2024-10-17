@@ -83,7 +83,7 @@ export class Email {
     )
     const { id } = await response.json()
 
-    const email = `w3m-w${id}@${domain}`
+    const email = `w3mx-w${id}@${domain}`
     // eslint-disable-next-line no-console
     console.log(`allocating email: ${email}`)
 

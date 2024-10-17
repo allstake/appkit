@@ -10,7 +10,7 @@ export class ModalValidator {
   constructor(public readonly page: Page) {}
 
   async expectConnected() {
-    const accountButton = this.page.locator('w3m-account-button')
+    const accountButton = this.page.locator('w3mx-account-button')
     await expect(accountButton, 'Account button should be present').toBeAttached({
       timeout: MAX_WAIT
     })
@@ -25,14 +25,14 @@ export class ModalValidator {
 
   async expectAuthenticated() {
     await expect(
-      this.page.getByTestId('w3m-authentication-status'),
+      this.page.getByTestId('w3mx-authentication-status'),
       'Authentication status should be: authenticated'
     ).toContainText('authenticated')
   }
 
   async expectUnauthenticated() {
     await expect(
-      this.page.getByTestId('w3m-authentication-status'),
+      this.page.getByTestId('w3mx-authentication-status'),
       'Authentication status should be: unauthenticated'
     ).toContainText('unauthenticated')
   }
@@ -60,13 +60,13 @@ export class ModalValidator {
   }
 
   async expectAddress(expectedAddress: string) {
-    const address = this.page.getByTestId('w3m-address')
+    const address = this.page.getByTestId('w3mx-address')
 
     await expect(address, 'Correct address should be present').toHaveText(expectedAddress)
   }
 
   async expectNetwork(network: string) {
-    const networkButton = this.page.getByTestId('w3m-account-select-network')
+    const networkButton = this.page.getByTestId('w3mx-account-select-network')
     await expect(networkButton, `Network button should contain text ${network}`).toHaveText(
       network,
       {
@@ -92,13 +92,13 @@ export class ModalValidator {
   }
 
   async expectSwitchedNetwork(network: string) {
-    const switchNetworkButton = this.page.getByTestId('w3m-account-select-network')
+    const switchNetworkButton = this.page.getByTestId('w3mx-account-select-network')
     await expect(switchNetworkButton).toBeVisible()
     await expect(switchNetworkButton).toHaveAttribute('active-network', network)
   }
 
   expectSecureSiteFrameNotInjected() {
-    const secureSiteIframe = this.page.frame({ name: 'w3m-secure-iframe' })
+    const secureSiteIframe = this.page.frame({ name: 'w3mx-secure-iframe' })
     expect(secureSiteIframe).toBeNull()
   }
 
@@ -151,12 +151,12 @@ export class ModalValidator {
   }
 
   async expectAccountPageVisible() {
-    const switchNetworkButton = this.page.getByTestId('w3m-account-select-network')
+    const switchNetworkButton = this.page.getByTestId('w3mx-account-select-network')
     await expect(switchNetworkButton).toBeVisible()
   }
 
   async expectOnrampButton(_library: string) {
-    const onrampButton = this.page.getByTestId('w3m-account-default-onramp-button')
+    const onrampButton = this.page.getByTestId('w3mx-account-default-onramp-button')
     await expect(onrampButton).toBeVisible()
   }
 
@@ -186,7 +186,7 @@ export class ModalValidator {
   }
 
   async expectNetworksDisabled(name: string) {
-    const networkOptions = this.page.getByTestId(`w3m-network-switch-${name}`)
+    const networkOptions = this.page.getByTestId(`w3mx-network-switch-${name}`)
     await expect(networkOptions).toBeDisabled()
   }
 
@@ -196,12 +196,12 @@ export class ModalValidator {
   }
 
   async expectAccountSwitched(oldAddress: string) {
-    const address = this.page.getByTestId('w3m-address')
+    const address = this.page.getByTestId('w3mx-address')
     await expect(address).not.toHaveText(oldAddress)
   }
 
   async expectSocialsVisible() {
-    const socials = this.page.getByTestId('w3m-social-login-widget')
+    const socials = this.page.getByTestId('w3mx-social-login-widget')
     await expect(socials).toBeVisible()
   }
 }

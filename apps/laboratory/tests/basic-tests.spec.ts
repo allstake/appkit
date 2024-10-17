@@ -1,5 +1,5 @@
-import { testMExternal } from './shared/fixtures/w3m-external-fixture'
-import { testM, expect } from './shared/fixtures/w3m-fixture'
+import { testMExternal } from './shared/fixtures/w3mx-external-fixture'
+import { testM, expect } from './shared/fixtures/w3mx-fixture'
 import { ModalValidator } from './shared/validators/ModalValidator'
 
 testM.describe('Modal only tests', () => {
@@ -9,7 +9,7 @@ testM.describe('Modal only tests', () => {
   })
 
   testM('Should be able to open modal with the open hook', async ({ modalPage }) => {
-    const openHookButton = modalPage.page.getByTestId('w3m-open-hook-button')
+    const openHookButton = modalPage.page.getByTestId('w3mx-open-hook-button')
     await openHookButton.click()
     await expect(modalPage.page.getByTestId('all-wallets')).toBeVisible()
   })

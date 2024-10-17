@@ -1,7 +1,7 @@
 export type SafeLocalStorageItems = {
-  '@w3m/wallet_id': string
-  '@w3m/solana_caip_chain': string
-  '@w3m/solana_wallet': string
+  '@w3mx/wallet_id': string
+  '@w3mx/solana_caip_chain': string
+  '@w3mx/solana_wallet': string
 }
 
 export const SafeLocalStorage = {

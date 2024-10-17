@@ -14,10 +14,10 @@
       "import": "./dist/esm/exports/index.js",
       "default": "./dist/esm/exports/index.js"
     },
-    "./w3m-modal": {
-      "types": "./dist/types/exports/w3m-modal.d.ts",
-      "import": "./dist/esm/exports/w3m-modal.js",
-      "default": "./dist/esm/exports/w3m-modal.js"
+    "./w3mx-modal": {
+      "types": "./dist/types/exports/w3mx-modal.d.ts",
+      "import": "./dist/esm/exports/w3mx-modal.js",
+      "default": "./dist/esm/exports/w3mx-modal.js"
     }
   },
   "scripts": {

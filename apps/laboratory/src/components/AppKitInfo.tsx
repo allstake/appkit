@@ -29,14 +29,14 @@ export function AppKitInfo({ address, chainId, clientId }: AppKitInfoProps) {
             <Heading size="xs" textTransform="uppercase" pb="2">
               Address
             </Heading>
-            <Text data-testid="w3m-address">{address}</Text>
+            <Text data-testid="w3mx-address">{address}</Text>
           </Box>
 
           <Box>
             <Heading size="xs" textTransform="uppercase" pb="2">
               Chain Id
             </Heading>
-            <Text data-testid="w3m-chain-id">{chainId}</Text>
+            <Text data-testid="w3mx-chain-id">{chainId}</Text>
           </Box>
 
           {clientId && (
@@ -44,7 +44,7 @@ export function AppKitInfo({ address, chainId, clientId }: AppKitInfoProps) {
               <Heading size="xs" textTransform="uppercase" pb="2">
                 Relay Client ID
               </Heading>
-              <Text data-testid="w3m-chain-id">{clientId}</Text>
+              <Text data-testid="w3mx-chain-id">{clientId}</Text>
             </Box>
           )}
         </Stack>

@@ -19,8 +19,8 @@ export const SolConstantsUtil = {
   /**
    * Mainnet program ID
    */
-  WALLET_ID: '@w3m/solana_wallet',
-  CAIP_CHAIN_ID: '@w3m/solana_caip_chain',
+  WALLET_ID: '@w3mx/solana_wallet',
+  CAIP_CHAIN_ID: '@w3mx/solana_caip_chain',
   ERROR_CODE_UNRECOGNIZED_CHAIN_ID: 4902,
   ERROR_CODE_DEFAULT: 5000,
   DEFAULT_CHAIN: {

@@ -424,8 +424,8 @@ export class AppKit<AdapterStoreState = unknown, SwitchNetworkParam = unknown> {
     if (!this.initPromise && !isInitialized && CoreHelperUtil.isClient()) {
       isInitialized = true
       this.initPromise = new Promise<void>(async resolve => {
-        await Promise.all([import('@web3modal-x/ui'), import('@web3modal-x/scaffold-ui/w3m-modal')])
-        const modal = document.createElement('w3m-modal-x')
+        await Promise.all([import('@web3modal-x/ui'), import('@web3modal-x/scaffold-ui/w3mx-modal')])
+        const modal = document.createElement('w3mx-modal')
         if (!OptionsController.state.disableAppend) {
           document.body.insertAdjacentElement('beforeend', modal)
         }

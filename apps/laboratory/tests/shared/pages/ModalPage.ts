@@ -247,7 +247,7 @@ export class ModalPage {
 
   async signatureRequestFrameShouldVisible(headerText: string) {
     await expect(
-      this.page.frameLocator('#w3m-iframe').getByText(headerText),
+      this.page.frameLocator('#w3mx-iframe').getByText(headerText),
       'AppKit iframe should be visible'
     ).toBeVisible({
       timeout: 10000
@@ -257,7 +257,7 @@ export class ModalPage {
 
   async clickSignatureRequestButton(name: string) {
     const signatureHeader = this.page.getByText('Approve Transaction')
-    await this.page.frameLocator('#w3m-iframe').getByRole('button', { name, exact: true }).click()
+    await this.page.frameLocator('#w3mx-iframe').getByRole('button', { name, exact: true }).click()
     await expect(signatureHeader, 'Signature request should be closed').not.toBeVisible()
     await this.page.waitForTimeout(300)
   }
@@ -280,12 +280,12 @@ export class ModalPage {
   async clickWalletUpgradeCard(context: BrowserContext) {
     await this.page.getByTestId('account-button').click()
 
-    await this.page.getByTestId('w3m-profile-button').click()
+    await this.page.getByTestId('w3mx-profile-button').click()
     await this.page.getByTestId('account-settings-button').click()
-    await this.page.getByTestId('w3m-wallet-upgrade-card').click()
+    await this.page.getByTestId('w3mx-wallet-upgrade-card').click()
 
     const page = await doActionAndWaitForNewPage(
-      this.page.getByTestId('w3m-secure-website-button').click(),
+      this.page.getByTestId('w3mx-secure-website-button').click(),
       context
     )
 
@@ -293,7 +293,7 @@ export class ModalPage {
   }
 
   async promptSiwe() {
-    const siweSign = this.page.getByTestId('w3m-connecting-siwe-sign')
+    const siweSign = this.page.getByTestId('w3mx-connecting-siwe-sign')
     await expect(siweSign, 'Siwe prompt sign button should be visible').toBeVisible({
       timeout: 10_000
     })
@@ -302,13 +302,13 @@ export class ModalPage {
   }
 
   async cancelSiwe() {
-    await this.page.getByTestId('w3m-connecting-siwe-cancel').click()
+    await this.page.getByTestId('w3mx-connecting-siwe-cancel').click()
   }
 
   async switchNetwork(network: string) {
     await this.page.getByTestId('account-button').click()
-    await this.page.getByTestId('w3m-account-select-network').click()
-    await this.page.getByTestId(`w3m-network-switch-${network}`).click()
+    await this.page.getByTestId('w3mx-account-select-network').click()
+    await this.page.getByTestId(`w3mx-network-switch-${network}`).click()
   }
 
   async clickWalletDeeplink() {
@@ -318,8 +318,8 @@ export class ModalPage {
   }
 
   async openAccount() {
-    expect(this.page.getByTestId('w3m-modal-card')).not.toBeVisible()
-    expect(this.page.getByTestId('w3m-modal-overlay')).not.toBeVisible()
+    expect(this.page.getByTestId('w3mx-modal-card')).not.toBeVisible()
+    expect(this.page.getByTestId('w3mx-modal-overlay')).not.toBeVisible()
     this.page.waitForTimeout(300)
     await this.page.getByTestId('account-button').click()
   }
@@ -329,7 +329,7 @@ export class ModalPage {
   }
 
   async closeModal() {
-    await this.page.getByTestId('w3m-header-close')?.click?.()
+    await this.page.getByTestId('w3mx-header-close')?.click?.()
     // Wait for the modal fade out animation
     await this.page.waitForTimeout(300)
   }
@@ -339,7 +339,7 @@ export class ModalPage {
     const newEmailAddress = await email.getEmailAddressToUse()
 
     await this.page.getByTestId('account-button').click()
-    await this.page.getByTestId('w3m-account-email-update').click()
+    await this.page.getByTestId('w3mx-account-email-update').click()
     await this.page.getByTestId('wui-email-input').locator('input').focus()
     await this.page.getByTestId('wui-email-input').locator('input').fill(newEmailAddress)
 
@@ -359,7 +359,7 @@ export class ModalPage {
     await this.updateOtpFlow(newEmailAddress, mailsacApiKey, 'Confirm New Email')
 
     expect(
-      this.page.getByTestId('w3m-account-email-update'),
+      this.page.getByTestId('w3mx-account-email-update'),
       `Expected to go to the account screen after the update`
     ).toBeVisible()
 
@@ -381,10 +381,10 @@ export class ModalPage {
   }
 
   async switchNetworkWithNetworkButton(networkName: string) {
-    const networkButton = this.page.getByTestId('w3m-network-button')
+    const networkButton = this.page.getByTestId('w3mx-network-button')
     await networkButton.click()
 
-    const networkToSwitchButton = this.page.getByTestId(`w3m-network-switch-${networkName}`)
+    const networkToSwitchButton = this.page.getByTestId(`w3mx-network-switch-${networkName}`)
     await networkToSwitchButton.click()
     await networkToSwitchButton.waitFor({ state: 'hidden' })
   }
@@ -394,7 +394,7 @@ export class ModalPage {
   }
 
   async openNetworks() {
-    await this.page.getByTestId('w3m-account-select-network').click()
+    await this.page.getByTestId('w3mx-account-select-network').click()
     await expect(this.page.getByText('Choose Network')).toBeVisible()
   }
 
@@ -424,27 +424,27 @@ export class ModalPage {
   }
 
   async switchAccount() {
-    const switchAccountButton1 = this.page.getByTestId('w3m-switch-address-button-1')
+    const switchAccountButton1 = this.page.getByTestId('w3mx-switch-address-button-1')
     await expect(switchAccountButton1).toBeVisible()
     await switchAccountButton1.click()
   }
 
   async getAddress(): Promise<`0x${string}`> {
-    const address = await this.page.getByTestId('w3m-address').textContent()
+    const address = await this.page.getByTestId('w3mx-address').textContent()
     expect(address, 'Address should be present').toBeTruthy()
 
     return address as `0x${string}`
   }
 
   async getChainId(): Promise<number> {
-    const chainId = await this.page.getByTestId('w3m-chain-id').textContent()
+    const chainId = await this.page.getByTestId('w3mx-chain-id').textContent()
     expect(chainId, 'Chain ID should be present').toBeTruthy()
 
     return Number(chainId)
   }
 
   async getSignature(): Promise<`0x${string}`> {
-    const signature = await this.page.getByTestId('w3m-signature').textContent()
+    const signature = await this.page.getByTestId('w3mx-signature').textContent()
     expect(signature, 'Signature should be present').toBeTruthy()
 
     return signature as `0x${string}`

@@ -54,8 +54,8 @@ createWeb3Modal({
   enableAnalytics: true,
   themeMode: 'light',
   themeVariables: {
-    '--w3m-color-mix': '#00DCFF',
-    '--w3m-color-mix-strength': 20
+    '--w3mx-color-mix': '#00DCFF',
+    '--w3mx-color-mix-strength': 20
   }
 })
 
@@ -68,10 +68,10 @@ export default function App() {
 
   return (
     <>
-      <w3m-button />
-      <w3m-network-button />
-      <w3m-connect-button />
-      <w3m-account-button />
+      <w3mx-button />
+      <w3mx-network-button />
+      <w3mx-connect-button />
+      <w3mx-account-button />
 
       <button onClick={() => modal.open()}>Connect Wallet</button>
       <button onClick={() => modal.open({ view: 'Networks' })}>Choose Network</button>

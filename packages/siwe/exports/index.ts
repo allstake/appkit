@@ -15,5 +15,5 @@ export function createSIWEConfig(siweConfig: SIWEConfig) {
   return new Web3ModalSIWEClient(siweConfig)
 }
 
-export * from '../scaffold/partials/w3m-connecting-siwe/index.js'
-export * from '../scaffold/views/w3m-connecting-siwe-view/index.js'
+export * from '../scaffold/partials/w3mx-connecting-siwe/index.js'
+export * from '../scaffold/views/w3mx-connecting-siwe-view/index.js'

@@ -1,6 +1,6 @@
 /* eslint no-console: 0 */
 
-import { testConnectedMW } from './shared/fixtures/w3m-wallet-fixture'
+import { testConnectedMW } from './shared/fixtures/w3mx-wallet-fixture'
 import { timeEnd, timeStart } from './shared/utils/logs'
 import { uploadCanaryResultsToCloudWatch } from './shared/utils/metrics'
 import { expectConnection } from './shared/utils/validation'

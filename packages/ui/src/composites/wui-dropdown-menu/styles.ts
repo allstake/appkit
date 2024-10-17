@@ -2,7 +2,7 @@ import { css } from 'lit'
 
 export default css`
   :host {
-    z-index: calc(var(--w3m-z-index) + 1);
+    z-index: calc(var(--w3mx-z-index) + 1);
     width: 200px;
     padding: var(--wui-spacing-3xs);
     align-items: center;

@@ -19,10 +19,10 @@ describe('ThemeController', () => {
   })
 
   it('should update state correctly when changing themeVariables', () => {
-    ThemeController.setThemeVariables({ '--w3m-color-mix': '#FF0000' })
+    ThemeController.setThemeVariables({ '--w3mx-color-mix': '#FF0000' })
     expect(ThemeController.state).toEqual({
       themeMode: 'light',
-      themeVariables: { '--w3m-color-mix': '#FF0000' }
+      themeVariables: { '--w3mx-color-mix': '#FF0000' }
     })
   })
 })

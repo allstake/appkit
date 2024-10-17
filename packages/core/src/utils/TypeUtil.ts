@@ -161,13 +161,13 @@ export interface ApiGetAnalyticsConfigResponse {
 export type ThemeMode = 'dark' | 'light'
 
 export interface ThemeVariables {
-  '--w3m-font-family'?: string
-  '--w3m-accent'?: string
-  '--w3m-color-mix'?: string
-  '--w3m-color-mix-strength'?: number
-  '--w3m-font-size-master'?: string
-  '--w3m-border-radius-master'?: string
-  '--w3m-z-index'?: number
+  '--w3mx-font-family'?: string
+  '--w3mx-accent'?: string
+  '--w3mx-color-mix'?: string
+  '--w3mx-color-mix-strength'?: number
+  '--w3mx-font-size-master'?: string
+  '--w3mx-border-radius-master'?: string
+  '--w3mx-z-index'?: number
 }
 
 // -- BlockchainApiController Types ---------------------------------------------

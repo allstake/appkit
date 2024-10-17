@@ -1,7 +1,7 @@
 'use client'
 
 import Image from 'next/image'
-import W3mLogo from '@/assets/images/w3m-logo.png'
+import W3mLogo from '@/assets/images/w3mx-logo.png'
 import { motion } from 'framer-motion'
 import { VARIANTS } from '@/utils/constants'
 

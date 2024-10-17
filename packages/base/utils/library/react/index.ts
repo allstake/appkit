@@ -20,11 +20,11 @@ type ThemeVariablesOptions = AppKitOptions['themeVariables']
 declare global {
   namespace JSX {
     interface IntrinsicElements {
-      'w3m-connect-button': Pick<W3mConnectButton, 'size' | 'label' | 'loadingLabel'>
-      'w3m-account-button': Pick<W3mAccountButton, 'disabled' | 'balance'>
-      'w3m-button': Pick<W3mButton, 'size' | 'label' | 'loadingLabel' | 'disabled' | 'balance'>
-      'w3m-network-button': Pick<W3mNetworkButton, 'disabled'>
-      'w3m-onramp-widget': Pick<W3mOnrampWidget, 'disabled'>
+      'w3mx-connect-button': Pick<W3mConnectButton, 'size' | 'label' | 'loadingLabel'>
+      'w3mx-account-button': Pick<W3mAccountButton, 'disabled' | 'balance'>
+      'w3mx-button': Pick<W3mButton, 'size' | 'label' | 'loadingLabel' | 'disabled' | 'balance'>
+      'w3mx-network-button': Pick<W3mNetworkButton, 'disabled'>
+      'w3mx-onramp-widget': Pick<W3mOnrampWidget, 'disabled'>
     }
   }
 }

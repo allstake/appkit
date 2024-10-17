@@ -2,7 +2,7 @@ import { defineConfig } from '@playwright/test'
 import { BASE_URL } from './tests/shared/constants'
 
 import { config } from 'dotenv'
-import type { ModalFixture } from './tests/shared/fixtures/w3m-fixture'
+import type { ModalFixture } from './tests/shared/fixtures/w3mx-fixture'
 import { getProjects } from './tests/shared/utils/project'
 import { getValue } from './tests/shared/utils/config'
 config({ path: './.env.local' })

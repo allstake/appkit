@@ -35,7 +35,7 @@ const customWallet = storedCustomWallet ? [JSON.parse(storedCustomWallet)] : []
 export const ConstantsUtil = {
   SigningSucceededToastTitle: 'Signing Succeeded',
   SigningFailedToastTitle: 'Signing Failed',
-  TestIdSiweAuthenticationStatus: 'w3m-authentication-status',
+  TestIdSiweAuthenticationStatus: 'w3mx-authentication-status',
   Metadata: {
     name: 'AppKit Lab',
     description: 'Laboratory environment for AppKit testing',

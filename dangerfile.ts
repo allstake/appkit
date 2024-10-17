@@ -264,8 +264,8 @@ async function checkScaffoldHtmlPackage() {
       )
     }
 
-    if (!diff?.added.includes(`@customElement('w3m-`)) {
-      fail(`${f} is a scaffold element, but does not define w3m- prefix`)
+    if (!diff?.added.includes(`@customElement('w3mx-`)) {
+      fail(`${f} is a scaffold element, but does not define w3mx- prefix`)
     }
 
     if (diff?.added.includes('.subscribe') && !diff.added.includes('this.unsubscribe.forEach')) {

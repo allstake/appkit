@@ -430,7 +430,7 @@ export class W3mFrameProvider {
     event: Omit<W3mFrameTypes.AppEvent, 'id'>
   ): Promise<W3mFrameTypes.Responses[`Frame${T}Response`]> {
     await this.w3mFrame.frameLoadPromise
-    const type = event.type.replace('@w3m-app/', '')
+    const type = event.type.replace('@w3mx-app/', '')
 
     return new Promise((resolve, reject) => {
       const id = Math.random().toString(36).substring(7)
@@ -439,7 +439,7 @@ export class W3mFrameProvider {
       this.w3mFrame.events.postAppEvent({ ...event, id } as W3mFrameTypes.AppEvent)
       const abortController = new AbortController()
       if (type === 'RPC_REQUEST') {
-        const rpcEvent = event as Extract<W3mFrameTypes.AppEvent, { type: '@w3m-app/RPC_REQUEST' }>
+        const rpcEvent = event as Extract<W3mFrameTypes.AppEvent, { type: '@w3mx-app/RPC_REQUEST' }>
         this.openRpcRequests = [...this.openRpcRequests, { ...rpcEvent.payload, abortController }]
       }
       abortController.signal.addEventListener('abort', () => {
@@ -449,12 +449,12 @@ export class W3mFrameProvider {
       })
 
       function handler(framEvent: W3mFrameTypes.FrameEvent) {
-        if (framEvent.type === `@w3m-frame/${type}_SUCCESS`) {
+        if (framEvent.type === `@w3mx-frame/${type}_SUCCESS`) {
           if ('payload' in framEvent) {
             resolve(framEvent.payload)
           }
           resolve(undefined as unknown as W3mFrameTypes.Responses[`Frame${T}Response`])
-        } else if (framEvent.type === `@w3m-frame/${type}_ERROR`) {
+        } else if (framEvent.type === `@w3mx-frame/${type}_ERROR`) {
           if ('payload' in framEvent) {
             reject(new Error(framEvent.payload?.message || 'An error occurred'))
           }

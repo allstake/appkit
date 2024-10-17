@@ -33,7 +33,7 @@ export function SiweData() {
             <Heading size="xs" textTransform="uppercase">
               Session Status
             </Heading>
-            <Text data-testid="w3m-authentication-status" pt="2" fontSize="sm">
+            <Text data-testid="w3mx-authentication-status" pt="2" fontSize="sm">
               {status}
             </Text>
           </Box>

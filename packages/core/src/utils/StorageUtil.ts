@@ -3,10 +3,10 @@ import type { WcWallet, ConnectorType, SocialProvider } from './TypeUtil.js'
 
 // -- Helpers -----------------------------------------------------------------
 const WC_DEEPLINK = 'WALLETCONNECT_DEEPLINK_CHOICE'
-const W3M_RECENT = '@w3m/recent'
-const W3M_CONNECTED_CONNECTOR = '@w3m/connected_connector'
-const W3M_CONNECTED_SOCIAL = '@w3m/connected_social'
-const W3M_CONNECTED_SOCIAL_USERNAME = '@w3m-storage/SOCIAL_USERNAME'
+const W3M_RECENT = '@w3mx/recent'
+const W3M_CONNECTED_CONNECTOR = '@w3mx/connected_connector'
+const W3M_CONNECTED_SOCIAL = '@w3mx/connected_social'
+const W3M_CONNECTED_SOCIAL_USERNAME = '@w3mx-storage/SOCIAL_USERNAME'
 
 // -- Utility -----------------------------------------------------------------
 export const StorageUtil = {

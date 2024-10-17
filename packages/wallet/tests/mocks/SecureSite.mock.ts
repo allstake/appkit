@@ -4,7 +4,7 @@ export const SecureSiteMock = {
       window.dispatchEvent(
         new MessageEvent('message', {
           data: {
-            type: `@w3m-frame/${type}_SUCCESS`,
+            type: `@w3mx-frame/${type}_SUCCESS`,
             id,
             payload: response
           }
@@ -17,7 +17,7 @@ export const SecureSiteMock = {
       window.dispatchEvent(
         new MessageEvent('message', {
           data: {
-            type: `@w3m-frame/${type}_ERROR`,
+            type: `@w3mx-frame/${type}_ERROR`,
             id,
             payload: {
               message

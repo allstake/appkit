@@ -23,27 +23,27 @@ export default css`
     :host([data-variant='generated']) {
       --mixed-local-color-1: color-mix(
         in srgb,
-        var(--w3m-color-mix) var(--w3m-color-mix-strength),
+        var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
         var(--local-color-1)
       );
       --mixed-local-color-2: color-mix(
         in srgb,
-        var(--w3m-color-mix) var(--w3m-color-mix-strength),
+        var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
         var(--local-color-2)
       );
       --mixed-local-color-3: color-mix(
         in srgb,
-        var(--w3m-color-mix) var(--w3m-color-mix-strength),
+        var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
         var(--local-color-3)
       );
       --mixed-local-color-4: color-mix(
         in srgb,
-        var(--w3m-color-mix) var(--w3m-color-mix-strength),
+        var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
         var(--local-color-4)
       );
       --mixed-local-color-5: color-mix(
         in srgb,
-        var(--w3m-color-mix) var(--w3m-color-mix-strength),
+        var(--w3mx-color-mix) var(--w3mx-color-mix-strength),
         var(--local-color-5)
       );
     }
